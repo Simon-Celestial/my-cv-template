@@ -1,3 +1,4 @@
+@import "./Variables/Variables.module";
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     text-decoration: none;
-    justify-content: center;
-    align-items: center;
+    background-color: $body-color;
+    font-family: $font-main;
+    color: $white-color;
 }
