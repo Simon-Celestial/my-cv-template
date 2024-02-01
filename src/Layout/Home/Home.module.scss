@@ -7,6 +7,9 @@
   flex-direction: column;
   align-items: center;
   padding: 60px 0;
+  position: relative;
+
+
   .pageContent {
     max-width: 1200px;
     width: 100%;
@@ -15,13 +18,40 @@
     background-color: $dark-color;
     border-radius: 30px;
     padding: 60px;
-    border: 1px dashed white;
+    border: 1px dashed $green-color;
+    .title {
+      display: inline-flex;
+      gap: 15px;
+      font-size: 32px;
+      font-family: $font-alternative;
+      font-weight: 600;
+      align-items: center;
+      color: $green-color;
+      user-select: none;
+      position: relative;
+      margin-bottom: 15px;
+      &:after {
+        position: absolute;
+        height: 2px;
+        background-color: $green-color;
+        width: 100%;
+        content: "";
+        bottom: -5px;
+      }
+      svg {
+        color: white;
+        font-size: 30px;
+        animation: scaleAnimation 1s linear infinite;
+      }
+    }
+
     .myName {
       display: flex;
       gap: 15px;
       align-items: center;
+
       .logoBox {
-       width: 50px;
+        width: 50px;
         height: 50px;
         overflow: hidden;
         border-radius: 50%;
@@ -33,39 +63,50 @@
         transition: $transition-medium;
         cursor: default;
         user-select: none;
+
         &:hover {
           transform: rotate(360deg) scale(1.1);
         }
+
         p {
           font-family: $font-marker;
           font-size: 32px;
           color: $green-color;
         }
       }
+
       span {
         font-family: $font-alternative;
         font-weight: 600;
         display: inline-flex;
         gap: 5px;
         font-size: 30px;
+        user-select: none;
+
         p {
           color: $green-color;
           animation: textGlow 2s linear infinite;
         }
       }
     }
+
     .infoContainer {
       display: flex;
       width: 100%;
+      gap: 75px;
       padding: 100px 0;
+      align-items: center;
+
       .imageBox {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 350px;
+        max-width: 350px;
+        width: 100%;
         height: 350px;
         border-radius: 50%;
         position: relative;
+
         .rotateBlock {
           display: flex;
           border-radius: 50%;
@@ -74,6 +115,7 @@
           height: 100%;
           animation: rotateAnimation 10s linear infinite;
         }
+
         img {
           position: absolute;
           left: 50%;
@@ -81,10 +123,119 @@
           width: 95%;
           height: 95%;
           border-radius: 50%;
-          transform: translate(-50%,-50%);
+          transform: translate(-50%, -50%);
 
 
         }
+      }
+
+      .infoContent {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+
+
+
+        h2 {
+          font-size: 32px;
+          font-family: $font-alternative;
+          font-weight: 600;
+          color: white;
+          user-select: none;
+          margin-top: 20px;
+          animation: whiteTextGlow 3s linear infinite;
+
+        }
+
+        h3 {
+          font-size: 20px;
+          color: $gray-color;
+          user-select: none;
+          font-weight: 400;
+          margin-top: 20px;
+          line-height: 30px;
+          span {
+            color: $green-color
+          }
+
+
+        }
+
+        .cvButton {
+          width: 150px;
+          height: 45px;
+          background-color: $green-color;
+          color: black;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 25px;
+          font-family: $font-main;
+          border-radius: 10px;
+          transition: $transition-fast;
+          border: 1px dashed transparent;
+
+          &:hover {
+            background-color: transparent;
+            color: $green-color;
+            border: 1px dashed white;
+
+          }
+        }
+
+      }
+    }
+    .educationContainer {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      padding: 15px 0;
+      gap: 12px;
+      border-bottom: 1px solid $gray-color;
+      &.last {
+        margin-bottom: 50px;
+      }
+      a {
+        font-size: 22px;
+        color: $white-color;
+        transition: $transition-fast;
+        &:hover {
+          color: $gray-color;
+          text-shadow: 0 0 15px $gray-color;
+        }
+      }
+      h2 {
+        font-size: 15px;
+        font-weight: 400;
+        color: $gray-color;
+      }
+      h3 {
+        border-radius: 20px;
+        border: 1px solid $green-color;
+        width: 100%;
+        max-width: 160px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        display: inline-flex;
+        font-size: 15px;
+      }
+    }
+    .skillsContainer {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 25px;
+      margin-top: 25px;
+      margin-bottom: 50px;
+      .skill {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $green-color;
+        padding: 15px 25px;
+        border-radius: 10px;
       }
     }
   }

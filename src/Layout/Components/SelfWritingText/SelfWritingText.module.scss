@@ -1,0 +1,14 @@
+@import "../../../Variables/Variables.module";
+@import "../../../Animations/Animations.module";
+
+
+.textHolder {
+  font-size: 80px;
+  font-family: $font-alternative;
+  font-weight: 600;
+  color: $green-color;
+  user-select: none;
+  .stick {
+    animation: blink 1s linear infinite;
+  }
+}

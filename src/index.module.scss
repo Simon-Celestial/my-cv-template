@@ -3,10 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: none;
 }
 body {
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -14,4 +14,7 @@ body {
     background-color: $body-color;
     font-family: $font-main;
     color: $white-color;
+}
+a {
+    text-decoration: none;
 }

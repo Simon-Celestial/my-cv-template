@@ -1,0 +1,28 @@
+@import "../../../Variables/Variables.module";
+
+.mouseFollower {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $green-color;
+  position: fixed;
+  transition: 50ms linear;
+  top: -10px;
+  left: -10px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 50;  }
+
+.mouseFollowerDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50px;
+  background-color: $green-color;
+  position: fixed;
+  transition: 30ms linear;
+  top: -10px;
+  left: -10px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 50;
+}
