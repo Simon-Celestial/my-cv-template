@@ -36,7 +36,7 @@ export const Home = () => {
                 </div>
                 <div className={styles.infoContainer}>
                     <div className={styles.imageBox}>
-                        <img src="../../../public/Assets/Images/myImg.jpg" alt="Me"/>
+                        <img src="/Assets/Images/myImg.jpg" alt="Me"/>
                         <div className={styles.rotateBlock}></div>
                     </div>
                     <div className={styles.infoContent}>
