@@ -14,9 +14,9 @@ export const Home = () => {
 
     return (
         <section className={styles.pageWrapper}>
-            <BackToTop />
+            <BackToTop/>
             <div className={styles.background}></div>
-            <MouseFollower />
+            <MouseFollower/>
             <div className={styles.pageContent}>
                 <div className={styles.circlesAnimation}>
                     <div className={styles.smallCircle}></div>
@@ -24,9 +24,9 @@ export const Home = () => {
                     <div className={styles.bigCircle}></div>
                 </div>
                 <div className={styles.spinningGears}>
-                    <FontAwesomeIcon className={styles.smallGear} icon={faGear} />
-                    <FontAwesomeIcon className={styles.mediumGear} icon={faGear} />
-                    <FontAwesomeIcon className={styles.biGGear} icon={faGear} />
+                    <FontAwesomeIcon className={styles.smallGear} icon={faGear}/>
+                    <FontAwesomeIcon className={styles.mediumGear} icon={faGear}/>
+                    <FontAwesomeIcon className={styles.biGGear} icon={faGear}/>
                 </div>
                 <div className={styles.myName}>
                     <div className={styles.logoBox}>
@@ -40,19 +40,19 @@ export const Home = () => {
                         <div className={styles.rotateBlock}></div>
                     </div>
                     <div className={styles.infoContent}>
-                        <SelfWritingText />
+                        <SelfWritingText/>
                         <h2>Gasimli Ziya</h2>
                         <h3>Hi there! This is my<span> personal</span> web spot. As an aspiring Junior Front End
                             <span> Developer,</span> I am eager to embark on a dynamic journey of growth in
                             the world of web<span> development.</span> Get to know me a bit, and if you're curious for
                             more, check out my CV, by clicking the<span> button</span> below. Simple as that!</h3>
-                        <a href="../../../public/Assets/Files/GasimliZiyaCV.pdf" download="Gasimli Ziya CV"
+                        <a href="/Assets/Files/GasimliZiyaCV.pdf" download="Gasimli Ziya CV.pdf"
                            className={styles.cvButton}>Download CV</a>
                     </div>
                 </div>
                 <div className={styles.title}>
                     EDUCATION
-                    <FontAwesomeIcon icon={faGraduationCap} />
+                    <FontAwesomeIcon icon={faGraduationCap}/>
                 </div>
                 <div className={styles.educationContainer}>
                     <a href="https://www.instagram.com/garageacademy.az/" target="_blank">Garage Academy</a>
@@ -71,7 +71,7 @@ export const Home = () => {
                 </div>
                 <div className={styles.title}>
                     SKILLS
-                    <FontAwesomeIcon icon={faLaptopCode} />
+                    <FontAwesomeIcon icon={faLaptopCode}/>
                 </div>
                 <div className={styles.skillsContainer}>
                     <div className={styles.skill}>
@@ -110,25 +110,25 @@ export const Home = () => {
                 </div>
                 <div className={styles.title}>
                     CONTACT ME
-                    <FontAwesomeIcon icon={faEnvelope} />
+                    <FontAwesomeIcon icon={faEnvelope}/>
                 </div>
                 <div className={styles.contactMe}>
                     <div className={styles.contactColumn}>
                         <div className={styles.contactRow}>
-                            <FontAwesomeIcon icon={faMobileScreen} />
+                            <FontAwesomeIcon icon={faMobileScreen}/>
                             <a href={`tel:${phoneNumber}`} target="_blank">{phoneNumber}</a>
                         </div>
                         <div className={styles.contactRow}>
-                            <FontAwesomeIcon icon={faEnvelope} />
-                            <a href={`mailto:${emailAddress}`} target="_blank">{emailAddress}</a>                        </div>
+                            <FontAwesomeIcon icon={faEnvelope}/>
+                            <a href={`mailto:${emailAddress}`} target="_blank">{emailAddress}</a></div>
                     </div>
                     <div className={styles.contactColumn}>
                         <div className={styles.contactRow}>
-                            <FontAwesomeIcon icon={faGithub} />
+                            <FontAwesomeIcon icon={faGithub}/>
                             <a href="https://github.com/Simon-Celestial" target="_blank">GitHub</a>
                         </div>
                         <div className={styles.contactRow}>
-                            <FontAwesomeIcon icon={faLinkedin} />
+                            <FontAwesomeIcon icon={faLinkedin}/>
                             <a href="https://www.linkedin.com/in/ziya-gasimli/" target="_blank">LinkedIn</a>
                         </div>
                     </div>
