@@ -331,6 +331,25 @@
         font-size: 15px;
       }
     }
+    .languageContainer {
+      display: flex;
+      width: 100%;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      p {
+        font-size: 25px;
+        font-family: $font-marker;
+        border: 1px solid $main-color;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: background-color $transition-fast;
+        user-select: none;
+        &:hover {
+          background-color: $main-color;
+        }
+      }
+    }
 
     .skillsContainer {
       display: flex;
@@ -446,6 +465,13 @@
 
       .last {
         margin-bottom: 25px !important;
+      }
+      .languageContainer {
+        margin-bottom: 25px;
+        gap: 15px;
+        p {
+          font-size: 15px;
+        }
       }
 
       .skillsContainer {

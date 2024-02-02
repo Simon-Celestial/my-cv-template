@@ -3,7 +3,14 @@ import styles from "./Home.module.scss";
 import {MouseFollower} from "../Components/MouseFollower/MouseFollower.jsx";
 import {SelfWritingText} from "../Components/SelfWritingText/SelfWritingText.jsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faEnvelope, faGear, faGraduationCap, faLaptopCode, faMobileScreen} from "@fortawesome/free-solid-svg-icons";
+import {
+    faEnvelope,
+    faGear,
+    faGraduationCap,
+    faLanguage,
+    faLaptopCode,
+    faMobileScreen
+} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {BackToTop} from "../Components/BackToTop/BackToTop.jsx";
 
@@ -70,6 +77,16 @@ export const Home = () => {
                     <h3>2013 - 2018</h3>
                 </div>
                 <div className={styles.title}>
+                    LANGUAGES
+                    <FontAwesomeIcon icon={faLanguage} />
+                </div>
+                <div className={styles.languageContainer}>
+                    <p>English</p>
+                    <p>Azerbaijani</p>
+                    <p>Russian</p>
+                    <p>Turkish</p>
+                </div>
+                <div className={styles.title}>
                     SKILLS
                     <FontAwesomeIcon icon={faLaptopCode}/>
                 </div>
@@ -134,6 +151,8 @@ export const Home = () => {
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </section>
     )
