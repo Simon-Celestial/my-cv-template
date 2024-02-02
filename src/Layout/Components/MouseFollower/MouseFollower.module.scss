@@ -4,7 +4,7 @@
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  border: 1px solid $green-color;
+  border: 1px solid $main-color;
   position: fixed;
   transition: 50ms linear;
   top: -10px;
@@ -17,7 +17,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50px;
-  background-color: $green-color;
+  background-color: $main-color;
   position: fixed;
   transition: 30ms linear;
   top: -10px;

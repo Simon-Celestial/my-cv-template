@@ -2,39 +2,39 @@
 
 @keyframes textGlow {
   0% {
-    text-shadow: 0 0 5px $green-color;
+    text-shadow: 0 0 5px $main-color;
   }
   25% {
-    text-shadow: 0 0 15px $green-color;
+    text-shadow: 0 0 15px $main-color;
   }
   50% {
-    text-shadow: 0 0 25px $green-color;
+    text-shadow: 0 0 25px $main-color;
 
   }
   75% {
-    text-shadow: 0 0 15px $green-color;
+    text-shadow: 0 0 15px $main-color;
   }
   100% {
-    text-shadow: 0 0 5px $green-color;
+    text-shadow: 0 0 5px $main-color;
   }
 }
 
 @keyframes whiteTextGlow {
   0% {
-    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 5px $white-color;
   }
   25% {
-    text-shadow: 0 0 15px white;
+    text-shadow: 0 0 15px $white-color;
   }
   50% {
-    text-shadow: 0 0 25px white;
+    text-shadow: 0 0 25px $white-color;
 
   }
   75% {
-    text-shadow: 0 0 15px white;
+    text-shadow: 0 0 15px $white-color;
   }
   100% {
-    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 5px $white-color;
   }
 }
 
@@ -62,5 +62,19 @@
   50% {
     transform: scale(1.2);
 
+  }
+}
+@keyframes circlesAnimation {
+  0% {
+    width: 60px;
+    height: 60px;
+  }
+  50% {
+    width: 80px;
+    height: 80px;
+  }
+  100% {
+    width: 60px;
+    height: 60px;
   }
 }

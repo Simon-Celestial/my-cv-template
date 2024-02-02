@@ -6,8 +6,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 0;
   position: relative;
+  .background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../../public/Assets/Images/background.gif");
+    background-position: center;
+    background-size: cover;
+  }
 
 
   .pageContent {
@@ -18,7 +25,88 @@
     background-color: $dark-color;
     border-radius: 30px;
     padding: 60px;
-    border: 1px dashed $green-color;
+    border: 1px dashed $main-color;
+    z-index: 3;
+    margin: 60px 0;
+    position: relative;
+    overflow: hidden;
+    .circlesAnimation {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      right: 50px;
+      top: 50px;
+      animation: circlesAnimation 5s linear infinite;
+
+
+      .smallCircle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid $main-color;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        animation: blink 3s linear infinite, textGlow 1s linear infinite;
+
+
+      }
+      .mediumCircle {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 2px solid $main-color;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        animation: blink 2s linear infinite, textGlow 1s linear infinite;
+      }
+      .bigCircle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid $main-color;
+        position: absolute;
+        bottom: 0;
+        animation: blink 4s linear infinite, textGlow 1s linear infinite;
+
+      }
+
+
+    }
+    .spinningGears {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
+      .smallGear {
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation: rotateAnimation 2s linear infinite;
+        color: $main-color;
+      }
+      .mediumGear {
+        position: absolute;
+        font-size: 25px;
+        top: 0;
+        left: 0;
+        animation: rotateAnimation 2s linear infinite;
+        color: $main-color;
+
+      }
+      .biGGear {
+        position: absolute;
+        font-size: 32px;
+        bottom: 0;
+        right: 0;
+        animation: rotateAnimation 2s linear infinite;
+        color: $main-color;
+
+      }
+    }
     .title {
       display: inline-flex;
       gap: 15px;
@@ -26,14 +114,14 @@
       font-family: $font-alternative;
       font-weight: 600;
       align-items: center;
-      color: $green-color;
+      color: $main-color;
       user-select: none;
       position: relative;
       margin-bottom: 15px;
       &:after {
         position: absolute;
         height: 2px;
-        background-color: $green-color;
+        background-color: $main-color;
         width: 100%;
         content: "";
         bottom: -5px;
@@ -71,7 +159,7 @@
         p {
           font-family: $font-marker;
           font-size: 32px;
-          color: $green-color;
+          color: $main-color;
         }
       }
 
@@ -84,7 +172,7 @@
         user-select: none;
 
         p {
-          color: $green-color;
+          color: $main-color;
           animation: textGlow 2s linear infinite;
         }
       }
@@ -110,7 +198,7 @@
         .rotateBlock {
           display: flex;
           border-radius: 50%;
-          border: 10px dashed $green-color;
+          border: 10px dashed $main-color;
           width: 100%;
           height: 100%;
           animation: rotateAnimation 10s linear infinite;
@@ -155,7 +243,9 @@
           margin-top: 20px;
           line-height: 30px;
           span {
-            color: $green-color
+            color: $main-color;
+            animation: textGlow 3s linear infinite;
+
           }
 
 
@@ -164,8 +254,8 @@
         .cvButton {
           width: 150px;
           height: 45px;
-          background-color: $green-color;
-          color: black;
+          background-color: $main-color;
+          color: $white-color;
           text-decoration: none;
           display: inline-flex;
           align-items: center;
@@ -178,8 +268,8 @@
 
           &:hover {
             background-color: transparent;
-            color: $green-color;
-            border: 1px dashed white;
+            color: $main-color;
+            border: 1px dashed $main-color;
 
           }
         }
@@ -212,7 +302,7 @@
       }
       h3 {
         border-radius: 20px;
-        border: 1px solid $green-color;
+        border: 1px solid $main-color;
         width: 100%;
         max-width: 160px;
         align-items: center;
@@ -233,9 +323,43 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid $green-color;
+        border: 1px solid $main-color;
         padding: 15px 25px;
         border-radius: 10px;
+        transition: background $transition-fast;
+        &:hover {
+          background-color: $main-color;
+        }
+      }
+    }
+    .contactMe {
+      display: flex;
+      width: 100%;
+      gap: 150px;
+      padding: 25px 0;
+      .contactColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .contactRow {
+          display: inline-flex;
+          gap: 20px;
+          svg {
+            font-size: 32px;
+            color: $main-color;
+          }
+          a {
+            font-size: 22px;
+            color: $white-color;
+            transition: $transition-fast;
+            &:hover {
+              color: $gray-color;
+              transform: scale(1.05);
+            }
+          }
+
+
+        }
       }
     }
   }
