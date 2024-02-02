@@ -348,6 +348,7 @@
         padding: 15px 25px;
         border-radius: 10px;
         transition: background $transition-fast;
+        user-select: none;
 
         &:hover {
           background-color: $main-color;
