@@ -84,10 +84,14 @@ export const Home = () => {
                         HTML5
                     </div>
                     <div className={styles.skill}>
-                        CSS3 (Sass/SCSS, Sass Modules)
+                        Git
                     </div>
                     <div className={styles.skill}>
-                        Adaptive and Mobile Design
+                        JSON
+                    </div>
+
+                    <div className={styles.skill}>
+                        CSS3 (Sass/SCSS, Sass Modules)
                     </div>
                     <div className={styles.skill}>
                         Axios
@@ -96,13 +100,10 @@ export const Home = () => {
                         Context
                     </div>
                     <div className={styles.skill}>
-                        Git
-                    </div>
-                    <div className={styles.skill}>
-                        JSON
-                    </div>
-                    <div className={styles.skill}>
                         Animation and Interaction: CSS and JavaScript
+                    </div>
+                    <div className={styles.skill}>
+                        Adaptive and Mobile Design
                     </div>
                     <div className={styles.skill}>
                         Basics of MVC

@@ -18,3 +18,10 @@ body {
 a {
     text-decoration: none;
 }
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: $dark-color;
+}
+::-webkit-scrollbar-thumb {
+    background: $main-color;
+}

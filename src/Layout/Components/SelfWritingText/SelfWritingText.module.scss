@@ -12,3 +12,14 @@
     animation: blink 1s linear infinite;
   }
 }
+
+
+
+@media screen and (max-width: 600px) {
+  .textHolder {
+    line-height: 60px;
+    span {
+      font-size: 50px;
+    }
+  }
+}

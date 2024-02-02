@@ -7,6 +7,8 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+
+
   .background {
     position: fixed;
     width: 100vw;
@@ -30,6 +32,7 @@
     margin: 60px 0;
     position: relative;
     overflow: hidden;
+
     .circlesAnimation {
       position: absolute;
       width: 60px;
@@ -52,6 +55,7 @@
 
 
       }
+
       .mediumCircle {
         width: 15px;
         height: 15px;
@@ -62,6 +66,7 @@
         bottom: 0;
         animation: blink 2s linear infinite, textGlow 1s linear infinite;
       }
+
       .bigCircle {
         width: 20px;
         height: 20px;
@@ -75,12 +80,14 @@
 
 
     }
+
     .spinningGears {
       width: 60px;
       height: 60px;
       position: absolute;
       right: 50px;
       bottom: 50px;
+
       .smallGear {
         position: absolute;
         top: 0;
@@ -88,6 +95,7 @@
         animation: rotateAnimation 2s linear infinite;
         color: $main-color;
       }
+
       .mediumGear {
         position: absolute;
         font-size: 25px;
@@ -97,6 +105,7 @@
         color: $main-color;
 
       }
+
       .biGGear {
         position: absolute;
         font-size: 32px;
@@ -107,6 +116,7 @@
 
       }
     }
+
     .title {
       display: inline-flex;
       gap: 15px;
@@ -118,6 +128,7 @@
       user-select: none;
       position: relative;
       margin-bottom: 15px;
+
       &:after {
         position: absolute;
         height: 2px;
@@ -126,6 +137,7 @@
         content: "";
         bottom: -5px;
       }
+
       svg {
         color: white;
         font-size: 30px;
@@ -223,7 +235,6 @@
         width: 60%;
 
 
-
         h2 {
           font-size: 32px;
           font-family: $font-alternative;
@@ -242,6 +253,7 @@
           font-weight: 400;
           margin-top: 20px;
           line-height: 30px;
+
           span {
             color: $main-color;
             animation: textGlow 3s linear infinite;
@@ -276,6 +288,7 @@
 
       }
     }
+
     .educationContainer {
       display: flex;
       width: 100%;
@@ -283,23 +296,29 @@
       padding: 15px 0;
       gap: 12px;
       border-bottom: 1px solid $gray-color;
+
       &.last {
         margin-bottom: 50px;
+        border-color: transparent;
       }
+
       a {
         font-size: 22px;
         color: $white-color;
         transition: $transition-fast;
+
         &:hover {
           color: $gray-color;
           text-shadow: 0 0 15px $gray-color;
         }
       }
+
       h2 {
         font-size: 15px;
         font-weight: 400;
         color: $gray-color;
       }
+
       h3 {
         border-radius: 20px;
         border: 1px solid $main-color;
@@ -312,6 +331,7 @@
         font-size: 15px;
       }
     }
+
     .skillsContainer {
       display: flex;
       flex-wrap: wrap;
@@ -319,6 +339,7 @@
       gap: 25px;
       margin-top: 25px;
       margin-bottom: 50px;
+
       .skill {
         display: flex;
         align-items: center;
@@ -327,31 +348,38 @@
         padding: 15px 25px;
         border-radius: 10px;
         transition: background $transition-fast;
+
         &:hover {
           background-color: $main-color;
         }
       }
     }
+
     .contactMe {
       display: flex;
       width: 100%;
       gap: 150px;
       padding: 25px 0;
+
       .contactColumn {
         display: flex;
         flex-direction: column;
         gap: 15px;
+
         .contactRow {
           display: inline-flex;
           gap: 20px;
+
           svg {
             font-size: 32px;
             color: $main-color;
           }
+
           a {
             font-size: 22px;
             color: $white-color;
             transition: $transition-fast;
+
             &:hover {
               color: $gray-color;
               transform: scale(1.05);
@@ -359,6 +387,241 @@
           }
 
 
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .pageWrapper {
+    .pageContent {
+      max-width: 1000px;
+
+      .infoContainer {
+        padding: 50px 0;
+        gap: 50px;
+
+        .imageBox {
+          max-width: 300px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .pageWrapper {
+    .pageContent {
+      max-width: 800px;
+
+      .infoContainer {
+        flex-direction: column;
+
+        .infoContent {
+          width: 100%;
+          align-items: center;
+        }
+
+        .imageBox {
+          max-width: 350px;
+          height: 350px;
+        }
+      }
+
+      .contactMe {
+        gap: 75px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .pageWrapper {
+    .pageContent {
+      padding: 30px;
+      max-width: 600px;
+
+      .last {
+        margin-bottom: 25px !important;
+      }
+
+      .skillsContainer {
+        justify-content: start;
+        gap: 15px;
+        margin-bottom: 25px;
+
+        .skill {
+          font-size: 14px;
+          padding: 7.5px 12.5px;
+        }
+      }
+
+      .infoContainer {
+        gap: 25px;
+
+        .infoContent {
+          h2 {
+            margin-top: 0;
+          }
+
+          h3 {
+            font-size: 18px;
+          }
+
+          .cvButton {
+            width: 100%;
+            height: 50px;
+          }
+        }
+
+        .imageBox {
+          max-width: 250px;
+          height: 250px;
+        }
+      }
+
+      .contactMe {
+        flex-direction: column;
+        gap: 15px;
+
+        .contactColumn {
+          .contactRow {
+            max-width: 320px;
+            width: 100%;
+
+            a {
+              font-size: 18px;
+            }
+
+            svg {
+              font-size: 28px;
+            }
+          }
+
+        }
+      }
+
+      .title {
+        font-size: 24px;
+
+        svg {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .pageWrapper {
+    .pageContent {
+      padding: 15px;
+      max-width: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pageWrapper {
+    .pageContent {
+      max-width: 420px;
+      .circlesAnimation {
+        top: 25px;
+        right: 25px;
+        transform: rotate(180deg);
+      }
+      .infoContainer {
+        gap: 0;
+        padding: 25px 0;
+      }
+      .spinningGears {
+        bottom: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pageWrapper {
+    .pageContent {
+      max-width: 320px;
+      margin: 30px 0;
+      .circlesAnimation {
+        top: 10px;
+        right: 15px;
+      }
+      .myName {
+        .logoBox {
+          width: 40px;
+          height: 40px;
+        }
+        span {
+          font-size: 25px;
+        }
+      }
+      .infoContainer {
+        .infoContent {
+          h3 {
+            font-size: 15px;
+          }
+          .cvButton {
+            height: 40px;
+          }
+        }
+      }
+      .educationContainer {
+        align-items: center;
+        a {
+          font-size: 18px;
+          text-align: center;
+        }
+        h2 {
+          font-size: 14px;
+        }
+        h3 {
+          font-size: 13px;
+          max-width: 100%;
+        }
+      }
+      .title {
+        justify-content: center;
+      }
+      .skillsContainer {
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  .pageWrapper {
+    .pageContent {
+      max-width: 280px;
+      .skillsContainer {
+        flex-wrap: unset;
+        flex-direction: column;
+        .skill {
+          text-align: center;
+        }
+      }
+      .contactMe {
+        .contactColumn {
+          .contactRow {
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .infoContainer {
+        .infoContent{
+          h3 {
+            text-align: center;
+          }
         }
       }
     }
