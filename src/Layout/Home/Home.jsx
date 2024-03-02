@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from 'react'
+import React, {useCallback, useState, useEffect} from 'react'
 import styles from "./Home.module.scss";
 import {MouseFollower} from "../Components/MouseFollower/MouseFollower.jsx";
 import {SelfWritingText} from "../Components/SelfWritingText/SelfWritingText.jsx";
@@ -11,33 +11,55 @@ import {
     faLaptopCode,
     faMobileScreen
 } from "@fortawesome/free-solid-svg-icons";
+import {BallTriangle} from 'react-loader-spinner';
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {BackToTop} from "../Components/BackToTop/BackToTop.jsx";
-import clickSound from "/Assets/Sounds/press.mp3"
+import clickSound from "/Assets/Sounds/press.mp3";
+import {MusicButton} from "../Components/MusicButton/MusicButton.jsx";
+const audio = new Audio(clickSound);
+
+const phoneNumber = '+994 55 828 01 92';
+const emailAddress = 'gasimli.ziya@yandex.com';
 
 export const Home = () => {
     const [buttonClicked, setButtonClicked] = useState(false);
-    const phoneNumber = '+994 55 828 01 92';
-    const emailAddress = 'gasimli.ziya@yandex.com';
+    const [loaderActive,setLoaderActive] = useState(true);
 
-    const clickHandler = useCallback(
-        () => {
-            setButtonClicked(true);
-            if (buttonClicked !== true) {
-                const audio = new Audio(clickSound);
-                audio.play().catch(error => {
-                    console.error("Error playing audio:", error);
-                });
-                setTimeout(() => {
-                    setButtonClicked(false);
-                }, 3000)
-            }
-        },
-        [buttonClicked, setButtonClicked],
-    );
+    const clickHandler = useCallback(() => {
+        setButtonClicked(true);
+    }, [buttonClicked]);
+
+    useEffect(() => {
+        if (buttonClicked) {
+            audio.play().catch(error => {
+                console.error("Error playing audio:", error);
+            });
+            setTimeout(() => {
+                setButtonClicked(false);
+            }, 3000);
+        }
+    }, [buttonClicked]);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoaderActive(false);
+        }, 3000);
+
+    }, []);
 
     return (
         <section className={styles.pageWrapper}>
+            <div className={`${styles.pageLoader} ${!loaderActive ? styles.loaderDisabled : ""}`}>
+                <BallTriangle
+                    height={100}
+                    width={100}
+                    radius={5}
+                    color="#C5012E"
+                    ariaLabel="ball-triangle-loading"
+                    visible={true}
+                />
+            </div>
+            <MusicButton />
             <BackToTop/>
             <div className={styles.background}></div>
             <MouseFollower/>
