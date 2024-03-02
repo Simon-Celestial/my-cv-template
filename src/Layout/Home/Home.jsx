@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useCallback, useState} from 'react'
 import styles from "./Home.module.scss";
 import {MouseFollower} from "../Components/MouseFollower/MouseFollower.jsx";
 import {SelfWritingText} from "../Components/SelfWritingText/SelfWritingText.jsx";
@@ -13,11 +13,28 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {BackToTop} from "../Components/BackToTop/BackToTop.jsx";
+import clickSound from "/Assets/Sounds/press.mp3"
 
 export const Home = () => {
-
+    const [buttonClicked, setButtonClicked] = useState(false);
     const phoneNumber = '+994 55 828 01 92';
     const emailAddress = 'gasimli.ziya@yandex.com';
+
+    const clickHandler = useCallback(
+        () => {
+            setButtonClicked(true);
+            if (buttonClicked !== true) {
+                const audio = new Audio(clickSound);
+                audio.play().catch(error => {
+                    console.error("Error playing audio:", error);
+                });
+                setTimeout(() => {
+                    setButtonClicked(false);
+                }, 3000)
+            }
+        },
+        [buttonClicked, setButtonClicked],
+    );
 
     return (
         <section className={styles.pageWrapper}>
@@ -54,7 +71,11 @@ export const Home = () => {
                             the world of web<span> development.</span> Get to know me a bit, and if you're curious for
                             more, check out my CV, by clicking the<span> button</span> below. Simple as that!</h3>
                         <a href="/Assets/Files/GasimliZiyaCV.pdf" download="Gasimli Ziya CV.pdf"
-                           className={styles.cvButton}>Download CV</a>
+                           className={`${styles.cvButton} ${buttonClicked ? styles.buttonActive : ""}`}
+                           onClick={clickHandler}>
+                            <p>Download CV</p>
+                            <img src="/Assets/Images/download2.gif" alt="download"/>
+                        </a>
                     </div>
                 </div>
                 <div className={styles.title}>
@@ -78,7 +99,7 @@ export const Home = () => {
                 </div>
                 <div className={styles.title}>
                     LANGUAGES
-                    <FontAwesomeIcon icon={faLanguage} />
+                    <FontAwesomeIcon icon={faLanguage}/>
                 </div>
                 <div className={styles.languageContainer}>
                     <p>English</p>
@@ -151,8 +172,6 @@ export const Home = () => {
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </section>
     )

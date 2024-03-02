@@ -264,12 +264,12 @@
         }
 
         .cvButton {
-          width: 150px;
-          height: 45px;
+          width: 200px;
+          height: 60px;
           background-color: $main-color;
           color: $white-color;
           text-decoration: none;
-          display: inline-flex;
+          display: flex;
           align-items: center;
           justify-content: center;
           margin-top: 25px;
@@ -277,6 +277,34 @@
           border-radius: 10px;
           transition: $transition-fast;
           border: 1px dashed transparent;
+          overflow: hidden;
+          position: relative;
+          p {
+            font-size: 20px;
+            transition: opacity $transition-medium;
+          }
+          img {
+            width: 150px;
+            object-position: center;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transition: opacity $transition-medium;
+            opacity: 0;
+            transform: translate(-50%,-50%) rotate(90deg);
+
+          }
+          &.buttonActive {
+            pointer-events: none;
+            img {
+              opacity: 1;
+            }
+            p {
+              opacity: 0;
+            }
+
+          }
 
           &:hover {
             background-color: transparent;
