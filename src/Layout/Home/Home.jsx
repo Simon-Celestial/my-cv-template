@@ -101,6 +101,15 @@ export const Home = () => {
                     </div>
                 </div>
                 <div className={styles.title}>
+                    WORK
+                    <FontAwesomeIcon icon={faGraduationCap}/>
+                </div>
+                <div className={`${styles.educationContainer} ${styles.workContainer}`}>
+                    <a href="https://www.instagram.com/garageacademy.az/" target="_blank">Garage Academy</a>
+                    <h2>Front End Development Mentor</h2>
+                    <h3>2024.01 - now</h3>
+                </div>
+                <div className={styles.title}>
                     EDUCATION
                     <FontAwesomeIcon icon={faGraduationCap}/>
                 </div>
