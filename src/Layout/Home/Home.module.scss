@@ -7,6 +7,10 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  &.scrollLock {
+    overflow: hidden;
+    max-height: 100vh;
+  }
   .pageLoader {
     z-index: 100000000;
     position: fixed;

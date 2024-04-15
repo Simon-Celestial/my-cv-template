@@ -4,6 +4,7 @@ import {MouseFollower} from "../Components/MouseFollower/MouseFollower.jsx";
 import {SelfWritingText} from "../Components/SelfWritingText/SelfWritingText.jsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
+    faBriefcase,
     faEnvelope,
     faGear,
     faGraduationCap,
@@ -48,7 +49,7 @@ export const Home = () => {
     }, []);
 
     return (
-        <section className={styles.pageWrapper}>
+        <section className={`${styles.pageWrapper} ${loaderActive ? styles.scrollLock : ""}`}>
             <div className={`${styles.pageLoader} ${!loaderActive ? styles.loaderDisabled : ""}`}>
                 <BallTriangle
                     height={100}
@@ -102,7 +103,7 @@ export const Home = () => {
                 </div>
                 <div className={styles.title}>
                     WORK
-                    <FontAwesomeIcon icon={faGraduationCap}/>
+                    <FontAwesomeIcon icon={faBriefcase} />
                 </div>
                 <div className={`${styles.educationContainer} ${styles.workContainer}`}>
                     <a href="https://www.instagram.com/garageacademy.az/" target="_blank">Garage Academy</a>

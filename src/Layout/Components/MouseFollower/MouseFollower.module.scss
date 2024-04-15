@@ -26,3 +26,11 @@
   pointer-events: none;
   z-index: 50;
 }
+@media screen and (max-width: 600px) {
+  .mouseFollower {
+    display: none;
+  }
+  .mouseFollowerDot {
+    display: none;
+  }
+}
