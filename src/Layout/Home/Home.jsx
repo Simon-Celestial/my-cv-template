@@ -4,6 +4,7 @@ import {MouseFollower} from "../Components/MouseFollower/MouseFollower.jsx";
 import {SelfWritingText} from "../Components/SelfWritingText/SelfWritingText.jsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
+    faAngleDown,
     faBriefcase,
     faEnvelope,
     faGear,
@@ -17,6 +18,8 @@ import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {BackToTop} from "../Components/BackToTop/BackToTop.jsx";
 import clickSound from "/Assets/Sounds/press.mp3";
 import {MusicButton} from "../Components/MusicButton/MusicButton.jsx";
+import LanguageSelection from "../Components/LanguageSelection/LanguageSelection.jsx";
+import {useTranslation} from "react-i18next";
 const audio = new Audio(clickSound);
 
 const phoneNumber = '+994 55 828 01 92';
@@ -48,8 +51,12 @@ export const Home = () => {
 
     }, []);
 
+    const { t } = useTranslation();
+
+
     return (
         <section className={`${styles.pageWrapper} ${loaderActive ? styles.scrollLock : ""}`}>
+            <LanguageSelection />
             <div className={`${styles.pageLoader} ${!loaderActive ? styles.loaderDisabled : ""}`}>
                 <BallTriangle
                     height={100}
@@ -60,7 +67,7 @@ export const Home = () => {
                     visible={true}
                 />
             </div>
-            <MusicButton />
+            <MusicButton/>
             <BackToTop/>
             <div className={styles.background}></div>
             <MouseFollower/>
@@ -79,7 +86,7 @@ export const Home = () => {
                     <div className={styles.logoBox}>
                         <p>Z</p>
                     </div>
-                    <span>Gasimli <p>Ziya</p></span>
+                    <span>{t('translations.surname')} <p>{t('translations.name')}</p></span>
                 </div>
                 <div className={styles.infoContainer}>
                     <div className={styles.imageBox}>
@@ -88,7 +95,7 @@ export const Home = () => {
                     </div>
                     <div className={styles.infoContent}>
                         <SelfWritingText/>
-                        <h2>Gasimli Ziya</h2>
+                        <h2>{t('translations.surname')} {t('translations.name')}</h2>
                         <h3>Hi there! This is my<span> personal</span> web spot. As an aspiring Junior Front End
                             <span> Developer,</span> I am eager to embark on a dynamic journey of growth in
                             the world of web<span> development.</span> Get to know me a bit, and if you're curious for
@@ -96,14 +103,14 @@ export const Home = () => {
                         <a href="/Assets/Files/GasimliZiyaCV.pdf" download="Gasimli Ziya CV.pdf"
                            className={`${styles.cvButton} ${buttonClicked ? styles.buttonActive : ""}`}
                            onClick={clickHandler}>
-                            <p>Download CV</p>
+                            <p>{t('translations.downloadCV')}</p>
                             <img src="/Assets/Images/download2.gif" alt="download"/>
                         </a>
                     </div>
                 </div>
                 <div className={styles.title}>
                     WORK
-                    <FontAwesomeIcon icon={faBriefcase} />
+                    <FontAwesomeIcon icon={faBriefcase}/>
                 </div>
                 <div className={`${styles.educationContainer} ${styles.workContainer}`}>
                     <a href="https://www.instagram.com/garageacademy.az/" target="_blank">Garage Academy</a>

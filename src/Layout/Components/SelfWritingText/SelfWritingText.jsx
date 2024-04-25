@@ -42,7 +42,6 @@ export const SelfWritingText = () => {
         <div className={styles.textHolder}>
             <span>{currentText}</span>
             <span className={styles.stick}>|</span>
-
         </div>
 
     )
