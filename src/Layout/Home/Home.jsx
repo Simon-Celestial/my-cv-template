@@ -20,6 +20,7 @@ import clickSound from "/Assets/Sounds/press.mp3";
 import {MusicButton} from "../Components/MusicButton/MusicButton.jsx";
 import LanguageSelection from "../Components/LanguageSelection/LanguageSelection.jsx";
 import {useTranslation} from "react-i18next";
+
 const audio = new Audio(clickSound);
 
 const phoneNumber = '+994 55 828 01 92';
@@ -27,7 +28,7 @@ const emailAddress = 'gasimli.ziya@yandex.com';
 
 export const Home = () => {
     const [buttonClicked, setButtonClicked] = useState(false);
-    const [loaderActive,setLoaderActive] = useState(true);
+    const [loaderActive, setLoaderActive] = useState(true);
 
     const clickHandler = useCallback(() => {
         setButtonClicked(true);
@@ -51,12 +52,12 @@ export const Home = () => {
 
     }, []);
 
-    const { t } = useTranslation();
+    const {t} = useTranslation();
 
 
     return (
         <section className={`${styles.pageWrapper} ${loaderActive ? styles.scrollLock : ""}`}>
-            <LanguageSelection />
+            <LanguageSelection/>
             <div className={`${styles.pageLoader} ${!loaderActive ? styles.loaderDisabled : ""}`}>
                 <BallTriangle
                     height={100}
