@@ -7,7 +7,10 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
-        '/public/translations/tr.json'
+        '/public/translations/tr.json',
+        '/public/translations/en.json',
+        '/public/translations/ru.json',
+        '/public/translations/az.json'
       ]
     }
   }
