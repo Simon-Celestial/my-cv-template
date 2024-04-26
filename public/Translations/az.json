@@ -2,6 +2,29 @@
   "translations": {
     "name": "Qasımlı",
     "surname": "Ziya",
-    "downloadCV" : "CV Yükləyin"
+    "downloadCV" : "CV Yükləyin",
+    "hi": "Salam! Bu mənim",
+    "personal" : " şəxsi ",
+    "webSpot" : "veb səhifəmdir. Junior Front End",
+    "developer" : " developerəm. ",
+    "iAmEager" : "Mən veb dünyasında",
+    "development" : " inkişaf etməyə hazıram. ",
+    "getToKnow": "Məni bir az tanıyın və əgər maraqlıdırsa, mənim CV-imi yoxlayın, aşağıdakı",
+    "button" : "düyməyə",
+    "below" : " basın.",
+    "work": "İŞ",
+    "education": "TƏHSİL",
+    "languages": "DİLLƏR",
+    "skills": "BACARIQLAR",
+    "contactMe": "MƏNİMLƏ ƏLAQƏ",
+    "university" : "Çerkass Dövlət Texnologiya Universiteti",
+    "bachelor" : "İdarəçilik Bakalavrı",
+    "english": "İngilis",
+    "russian" : "Rusça",
+    "turkish" : "Türkçe",
+    "azerbaijani": "Azerbaycanca",
+    "profile": "Front-end Proqramlaşdırma",
+    "mentor": "Mentor",
+    "now" : "bu vaxt"
   }
 }

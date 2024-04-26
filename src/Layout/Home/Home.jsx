@@ -97,10 +97,14 @@ export const Home = () => {
                     <div className={styles.infoContent}>
                         <SelfWritingText/>
                         <h2>{t('translations.surname')} {t('translations.name')}</h2>
-                        <h3>Hi there! This is my<span> personal</span> web spot. As an aspiring Junior Front End
-                            <span> Developer,</span> I am eager to embark on a dynamic journey of growth in
-                            the world of web<span> development.</span> Get to know me a bit, and if you're curious for
-                            more, check out my CV, by clicking the<span> button</span> below. Simple as that!</h3>
+                        <h3>{t('translations.hi')}<span>
+                            {t('translations.personal')}</span>
+                            {t('translations.webSpot')}
+                            <span>{t('translations.developer')}</span>
+                            {t('translations.iAmEager')}<span> {t('translations.development')}</span>
+                            {t('translations.getToKnow')}
+                            <span>  {t('translations.button')}</span>
+                            {t('translations.below')}</h3>
                         <a href="/Assets/Files/GasimliZiyaCV.pdf" download="Gasimli Ziya CV.pdf"
                            className={`${styles.cvButton} ${buttonClicked ? styles.buttonActive : ""}`}
                            onClick={clickHandler}>
@@ -110,45 +114,45 @@ export const Home = () => {
                     </div>
                 </div>
                 <div className={styles.title}>
-                    WORK
+                    {t('translations.work')}
                     <FontAwesomeIcon icon={faBriefcase}/>
                 </div>
                 <div className={`${styles.educationContainer} ${styles.workContainer}`}>
                     <a href="https://www.instagram.com/garageacademy.az/" target="_blank">Garage Academy</a>
-                    <h2>Front End Development Mentor</h2>
-                    <h3>2024.01 - now</h3>
+                    <h2> {t('translations.profile')} {t('translations.mentor')}</h2>
+                    <h3>2024.01 - {t('translations.now')}</h3>
                 </div>
                 <div className={styles.title}>
-                    EDUCATION
+                    {t('translations.education')}
                     <FontAwesomeIcon icon={faGraduationCap}/>
                 </div>
                 <div className={styles.educationContainer}>
                     <a href="https://www.instagram.com/garageacademy.az/" target="_blank">Garage Academy</a>
-                    <h2>Front End Development</h2>
+                    <h2>{t('translations.profile')}</h2>
                     <h3>2023.08 - 2024.01</h3>
                 </div>
                 <div className={styles.educationContainer}>
                     <a href="https://www.instagram.com/evocoding.az/" target="_blank">Evo Coding Center</a>
-                    <h2>Front End Development</h2>
+                    <h2>{t('translations.profile')}</h2>
                     <h3>2023.02 - 2023.07</h3>
                 </div>
                 <div className={`${styles.educationContainer} ${styles.last}`}>
-                    <a href="https://chdtu.edu.ua/" target="_blank">Cherkasy State Technological University</a>
-                    <h2>Bachelor of Management</h2>
+                    <a href="https://chdtu.edu.ua/" target="_blank">{t('translations.university')}</a>
+                    <h2>{t('translations.bachelor')}</h2>
                     <h3>2013 - 2018</h3>
                 </div>
                 <div className={styles.title}>
-                    LANGUAGES
+                    {t('translations.languages')}
                     <FontAwesomeIcon icon={faLanguage}/>
                 </div>
                 <div className={styles.languageContainer}>
-                    <p>English</p>
-                    <p>Azerbaijani</p>
-                    <p>Russian</p>
-                    <p>Turkish</p>
+                    <p>{t('translations.english')}</p>
+                    <p>{t('translations.azerbaijani')}</p>
+                    <p>{t('translations.russian')}</p>
+                    <p>{t('translations.turkish')}</p>
                 </div>
                 <div className={styles.title}>
-                    SKILLS
+                    {t('translations.skills')}
                     <FontAwesomeIcon icon={faLaptopCode}/>
                 </div>
                 <div className={styles.skillsContainer}>
@@ -188,7 +192,7 @@ export const Home = () => {
                     </div>
                 </div>
                 <div className={styles.title}>
-                    CONTACT ME
+                    {t('translations.contactMe')}
                     <FontAwesomeIcon icon={faEnvelope}/>
                 </div>
                 <div className={styles.contactMe}>
