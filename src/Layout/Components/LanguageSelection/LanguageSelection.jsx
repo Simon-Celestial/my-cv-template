@@ -6,16 +6,14 @@ import {faAngleDown} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
-
 const LanguageSelection = () => {
     const [languageOpen, setLanguageOpen] = useState(false);
 
-    const { i18n } = useTranslation();
+    const {i18n} = useTranslation();
 
-        const changeLanguageHandler = (language) => {
-            i18n.changeLanguage(language);
-        }
-
+    const changeLanguageHandler = (language) => {
+        i18n.changeLanguage(language);
+    }
 
 
     const languageOpenHandler = useCallback((event) => {
@@ -49,12 +47,13 @@ const LanguageSelection = () => {
                     i18n.language
                 }
             </span>
-            <FontAwesomeIcon icon={faAngleDown} className={languageOpen ? styles.rotate : ""} />
+            <FontAwesomeIcon icon={faAngleDown} className={languageOpen ? styles.rotate : ""}/>
             <div className={`${styles.languageDropdown} ${languageOpen ? styles.languageVisible : ""}`}
                  onClick={e => e.stopPropagation()}>
-                {languages.map((language)=> {
+                {languages.map((language) => {
                     return (
-                        <p className={i18n.language === language.id ? styles.selected : ""} key={language.id} onClick={() => languageClickHandler(language.id)}>{language.name}</p>
+                        <p className={i18n.language === language.id ? styles.selected : ""} key={language.id}
+                           onClick={() => languageClickHandler(language.id)}>{language.name}</p>
                     )
                 })}
             </div>

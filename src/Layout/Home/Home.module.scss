@@ -7,10 +7,12 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+
   &.scrollLock {
     overflow: hidden;
     max-height: 100vh;
   }
+
   .pageLoader {
     z-index: 100000000;
     position: fixed;
@@ -20,6 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     &.loaderDisabled {
       display: none;
     }
@@ -296,10 +299,12 @@
           border: 1px dashed transparent;
           overflow: hidden;
           position: relative;
+
           p {
             font-size: 20px;
             transition: opacity $transition-medium;
           }
+
           img {
             width: 150px;
             object-position: center;
@@ -309,14 +314,17 @@
             top: 50%;
             transition: opacity $transition-medium;
             opacity: 0;
-            transform: translate(-50%,-50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
 
           }
+
           &.buttonActive {
             pointer-events: none;
+
             img {
               opacity: 1;
             }
+
             p {
               opacity: 0;
             }
@@ -341,6 +349,7 @@
       padding: 15px 0;
       gap: 12px;
       border-bottom: 1px solid $gray-color;
+
       &.workContainer {
         margin-bottom: 50px;
       }
@@ -379,12 +388,14 @@
         font-size: 15px;
       }
     }
+
     .languageContainer {
       display: flex;
       width: 100%;
       gap: 25px;
       flex-wrap: wrap;
       margin-bottom: 50px;
+
       p {
         font-size: 25px;
         font-family: $font-marker;
@@ -393,6 +404,7 @@
         border-radius: 10px;
         transition: background-color $transition-fast;
         user-select: none;
+
         &:hover {
           background-color: $main-color;
         }
@@ -478,6 +490,7 @@
     }
   }
 }
+
 @media screen and (max-width: 1250px) {
   .pageWrapper {
     .pageContent {
@@ -521,9 +534,11 @@
       .last {
         margin-bottom: 25px !important;
       }
+
       .languageContainer {
         margin-bottom: 25px;
         gap: 15px;
+
         p {
           font-size: 15px;
         }
@@ -606,15 +621,18 @@
   .pageWrapper {
     .pageContent {
       max-width: 420px;
+
       .circlesAnimation {
         top: 25px;
         right: 25px;
         transform: rotate(180deg);
       }
+
       .infoContainer {
         gap: 0;
         padding: 25px 0;
       }
+
       .spinningGears {
         bottom: 25px;
       }
@@ -627,46 +645,57 @@
     .pageContent {
       max-width: 320px;
       margin: 80px 0 30px 0;
+
       .circlesAnimation {
         top: 10px;
         right: 15px;
       }
+
       .myName {
         .logoBox {
           width: 40px;
           height: 40px;
         }
+
         span {
           font-size: 25px;
         }
       }
+
       .infoContainer {
         .infoContent {
           h3 {
             font-size: 15px;
           }
+
           .cvButton {
             height: 40px;
           }
         }
       }
+
       .educationContainer {
         align-items: center;
+
         a {
           font-size: 18px;
           text-align: center;
         }
+
         h2 {
           font-size: 14px;
         }
+
         h3 {
           font-size: 13px;
           max-width: 100%;
         }
       }
+
       .title {
         justify-content: center;
       }
+
       .skillsContainer {
         gap: 10px;
         margin-top: 15px;
@@ -675,17 +704,21 @@
     }
   }
 }
+
 @media screen and (max-width: 380px) {
   .pageWrapper {
     .pageContent {
       max-width: 280px;
+
       .skillsContainer {
         flex-wrap: unset;
         flex-direction: column;
+
         .skill {
           text-align: center;
         }
       }
+
       .contactMe {
         .contactColumn {
           .contactRow {
@@ -695,8 +728,9 @@
           }
         }
       }
+
       .infoContainer {
-        .infoContent{
+        .infoContent {
           h3 {
             text-align: center;
           }
