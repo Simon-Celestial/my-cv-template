@@ -623,6 +623,14 @@
           font-size: 15px;
         }
       }
+      .portfolioContainer {
+        .projectCard {
+          &.notAvailable {
+            max-height: 357px;
+
+          }
+        }
+      }
 
       .skillsContainer {
         justify-content: start;
@@ -693,6 +701,14 @@
     .pageContent {
       padding: 15px;
       max-width: 500px;
+      .portfolioContainer {
+        .projectCard {
+          &.notAvailable {
+            max-height: 377px;
+          }
+        }
+      }
+
     }
   }
 }
@@ -716,6 +732,17 @@
       .spinningGears {
         bottom: 25px;
       }
+      .portfolioContainer {
+        .projectCard {
+          &.notAvailable {
+            max-height: 406px;
+          }
+          .portfolioImage {
+            height: 200px;
+          }
+        }
+      }
+
     }
   }
 }
@@ -750,6 +777,24 @@
 
           .cvButton {
             height: 40px;
+          }
+        }
+      }
+      .portfolioContainer {
+        .projectCard {
+          &.notAvailable {
+            max-height: 371px;
+          }
+          .portfolioTitle {
+            p {
+              font-size: 18px;
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+          .portfolioImage {
+            height: 150px;
           }
         }
       }
@@ -798,6 +843,25 @@
           text-align: center;
         }
       }
+      .portfolioContainer {
+        .projectCard {
+          &.notAvailable {
+            max-height: 368px;
+          }
+          .portfolioImage {
+            height: 130px;
+          }
+          .portfolioTitle {
+            p {
+              font-size: 15px;
+              span {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+
 
       .contactMe {
         .contactColumn {
