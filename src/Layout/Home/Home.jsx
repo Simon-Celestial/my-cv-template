@@ -119,15 +119,15 @@ export const Home = () => {
                     <FontAwesomeIcon icon={faBriefcase}/>
                 </div>
                 <div className={`${styles.educationContainer} ${styles.workContainer}`}>
-                    <a href="https://www.instagram.com/garageacademy.az/" target="_blank">
-                        <img src="/public/Assets/Images/upWork.png" alt="Logo"/>
+                    <a href="https://www.upwork.com/" target="_blank">
+                        <img src="/Assets/Images/upWork.png" alt="Logo"/>
                         Up work</a>
                     <h2> {t('translations.profile')} ( Freelance )</h2>
                     <h3>2024.05 - {t('translations.now')}</h3>
                 </div>
                 <div className={`${styles.educationContainer} ${styles.workContainer} ${styles.last}`}>
                     <a href="https://www.instagram.com/garageacademy.az/" target="_blank">
-                        <img src="/public/Assets/Images/garage.png" alt="Logo"/>
+                        <img src="/Assets/Images/garage.png" alt="Logo"/>
                         Garage Academy</a>
                     <h2> {t('translations.profile')} {t('translations.mentor')}</h2>
                     <h3>2024.01 - 2024.05</h3>
@@ -138,14 +138,14 @@ export const Home = () => {
                 </div>
                 <div className={styles.educationContainer}>
                     <a href="https://www.instagram.com/garageacademy.az/" target="_blank">
-                        <img src="/public/Assets/Images/garage.png" alt="Logo"/>
+                        <img src="/Assets/Images/garage.png" alt="Logo"/>
                         Garage Academy</a>
                     <h2>{t('translations.profile')}</h2>
                     <h3>2023.08 - 2024.01</h3>
                 </div>
                 <div className={styles.educationContainer}>
                     <a href="https://www.instagram.com/evocoding.az/" target="_blank">
-                        <img src="/public/Assets/Images/evo.png" alt="Logo"/>
+                        <img src="/Assets/Images/evo.png" alt="Logo"/>
                         Evo Coding Center</a>
                     <h2>{t('translations.profile')}</h2>
                     <h3>2023.02 - 2023.07</h3>
