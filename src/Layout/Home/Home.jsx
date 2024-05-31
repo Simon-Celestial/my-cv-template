@@ -3,6 +3,7 @@ import styles from "./Home.module.scss";
 import {MouseFollower} from "../Components/MouseFollower/MouseFollower.jsx";
 import {SelfWritingText} from "../Components/SelfWritingText/SelfWritingText.jsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import skillsData from "/public/Data/skills.json";
 import {
     faAngleDown,
     faBriefcase,
@@ -118,26 +119,41 @@ export const Home = () => {
                     <FontAwesomeIcon icon={faBriefcase}/>
                 </div>
                 <div className={`${styles.educationContainer} ${styles.workContainer}`}>
-                    <a href="https://www.instagram.com/garageacademy.az/" target="_blank">Garage Academy</a>
+                    <a href="https://www.instagram.com/garageacademy.az/" target="_blank">
+                        <img src="/public/Assets/Images/upWork.png" alt="Logo"/>
+                        Up work</a>
+                    <h2> {t('translations.profile')} ( Freelance )</h2>
+                    <h3>2024.05 - {t('translations.now')}</h3>
+                </div>
+                <div className={`${styles.educationContainer} ${styles.workContainer} ${styles.last}`}>
+                    <a href="https://www.instagram.com/garageacademy.az/" target="_blank">
+                        <img src="/public/Assets/Images/garage.png" alt="Logo"/>
+                        Garage Academy</a>
                     <h2> {t('translations.profile')} {t('translations.mentor')}</h2>
-                    <h3>2024.01 - {t('translations.now')}</h3>
+                    <h3>2024.01 - 2024.05</h3>
                 </div>
                 <div className={styles.title}>
                     {t('translations.education')}
                     <FontAwesomeIcon icon={faGraduationCap}/>
                 </div>
                 <div className={styles.educationContainer}>
-                    <a href="https://www.instagram.com/garageacademy.az/" target="_blank">Garage Academy</a>
+                    <a href="https://www.instagram.com/garageacademy.az/" target="_blank">
+                        <img src="/public/Assets/Images/garage.png" alt="Logo"/>
+                        Garage Academy</a>
                     <h2>{t('translations.profile')}</h2>
                     <h3>2023.08 - 2024.01</h3>
                 </div>
                 <div className={styles.educationContainer}>
-                    <a href="https://www.instagram.com/evocoding.az/" target="_blank">Evo Coding Center</a>
+                    <a href="https://www.instagram.com/evocoding.az/" target="_blank">
+                        <img src="/public/Assets/Images/evo.png" alt="Logo"/>
+                        Evo Coding Center</a>
                     <h2>{t('translations.profile')}</h2>
                     <h3>2023.02 - 2023.07</h3>
                 </div>
                 <div className={`${styles.educationContainer} ${styles.last}`}>
-                    <a href="https://chdtu.edu.ua/" target="_blank">{t('translations.university')}</a>
+                    <a href="https://chdtu.edu.ua/" target="_blank">
+                        <img src="/public/Assets/Images/uniLogo.png" alt="Logo"/>
+                        {t('translations.university')}</a>
                     <h2>{t('translations.bachelor')}</h2>
                     <h3>2013 - 2018</h3>
                 </div>
@@ -156,40 +172,13 @@ export const Home = () => {
                     <FontAwesomeIcon icon={faLaptopCode}/>
                 </div>
                 <div className={styles.skillsContainer}>
-                    <div className={styles.skill}>
-                        REACT
-                    </div>
-                    <div className={styles.skill}>
-                        Javascript
-                    </div>
-                    <div className={styles.skill}>
-                        HTML5
-                    </div>
-                    <div className={styles.skill}>
-                        Git
-                    </div>
-                    <div className={styles.skill}>
-                        JSON
-                    </div>
-
-                    <div className={styles.skill}>
-                        CSS3 (Sass/SCSS, Sass Modules)
-                    </div>
-                    <div className={styles.skill}>
-                        Axios
-                    </div>
-                    <div className={styles.skill}>
-                        Context
-                    </div>
-                    <div className={styles.skill}>
-                        Animation and Interaction: CSS and JavaScript
-                    </div>
-                    <div className={styles.skill}>
-                        Adaptive and Mobile Design
-                    </div>
-                    <div className={styles.skill}>
-                        Basics of MVC
-                    </div>
+                    {skillsData?.map((skills) => {
+                        return (
+                            <div key={skills?.id} className={styles.skill}>
+                                {skills?.name}
+                            </div>
+                        )
+                    })}
                 </div>
                 <div className={styles.title}>
                     {t('translations.contactMe')}

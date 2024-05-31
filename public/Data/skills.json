@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "React"
+  },
+  {
+    "id": 2,
+    "name": "Javascript"
+  },
+  {
+    "id": 3,
+    "name": "HTML5"
+  },
+  {
+    "id": 4,
+    "name": "CSS3"
+  },
+  {
+    "id": 5,
+    "name": "Sass Modules"
+  },
+  {
+    "id": 6,
+    "name": "Adaptive and Mobile Design"
+  },
+  {
+    "id": 7,
+    "name": "Axios"
+  },
+  {
+    "id": 8,
+    "name": "Context"
+  },
+  {
+    "id": 9,
+    "name": "Version Control (Git)"
+  },
+  {
+    "id": 10,
+    "name": "Json"
+  },
+  {
+    "id": 11,
+    "name": "React ( i18n )"
+  },
+  {
+    "id": 12,
+    "name": "RESTful API"
+  },
+  {
+    "id": 13,
+    "name": "Web Animation"
+  },
+  {
+    "id": 14,
+    "name": "Basics of MVC"
+  },
+  {
+    "id": 15,
+    "name": "Event Handling"
+  },
+  {
+    "id": 16,
+    "name": "Tailwind CSS"
+  },
+  {
+    "id": 17,
+    "name": "TypeScript"
+  },
+  {
+    "id": 18,
+    "name": "SEO"
+  },
+  {
+    "id": 19,
+    "name": "Performance Optimization"
+  },
+  {
+    "id": 20,
+    "name": "Authentication"
+  }
+]
