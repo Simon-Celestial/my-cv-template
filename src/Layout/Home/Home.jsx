@@ -234,7 +234,7 @@ export const Home = () => {
                         <img src="/Assets/Images/uniLogo.png" alt="Logo"/>
                         {t('translations.university')}</a>
                     <h2>{t('translations.bachelor')}</h2>
-                    <h3>2013 - 2018</h3>
+                    <h3>2013.09 - 2018.05</h3>
                 </div>
                 <div className={styles.title}>
                     {t('translations.languages')}

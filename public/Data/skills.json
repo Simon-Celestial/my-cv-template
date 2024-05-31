@@ -78,5 +78,9 @@
   {
     "id": 20,
     "name": "Authentication"
+  },
+  {
+    "id": 21,
+    "name": "Admin Dashboard"
   }
 ]
