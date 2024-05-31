@@ -148,6 +148,7 @@
       user-select: none;
       position: relative;
       margin-bottom: 15px;
+      text-transform: uppercase;
 
       &:after {
         position: absolute;
@@ -162,6 +163,75 @@
         color: white;
         font-size: 30px;
         animation: scaleAnimation 1s linear infinite;
+      }
+    }
+    .portfolioContainer {
+      display: flex;
+      width: 100%;
+      margin-top: 25px;
+      .projectCard {
+        display: flex;
+        margin-bottom: 65px;
+        width: 100%;
+        flex-direction: column;
+         border: 2px dashed $main-color;
+        border-radius: 5px;
+        overflow: hidden;
+        &.notAvailable {
+          justify-content: center;
+          align-items: center;
+          max-height: 370px;
+          height: 100%;
+        }
+        .portfolioImage {
+          width: 100%;
+          height: 170px;
+
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-position: left;
+            object-fit: cover;
+          }
+        }
+        .portfolioTitle {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 15px;
+          gap: 15px;
+          font-size: 15px;
+          color: white;
+          p {
+            color: $main-color;
+            font-size: 19px;
+            font-weight: 700;
+            a {
+              color: white;
+              font-size: 15px;
+              display: inline-flex;
+              gap: 10px;
+              align-items: center;
+              transition: color $transition-medium;
+              &:hover {
+                color: gray!important;
+              }
+              svg {
+                font-size: 19px;
+              }
+            }
+            span {
+              font-size: 18px;
+              color: white;
+            }
+            h2 {
+              color: gray;
+              font-size: 15px;
+            }
+          }
+
+        }
       }
     }
 
@@ -488,7 +558,6 @@
   .pageWrapper {
     .pageContent {
       max-width: 1000px;
-
       .infoContainer {
         padding: 50px 0;
         gap: 50px;

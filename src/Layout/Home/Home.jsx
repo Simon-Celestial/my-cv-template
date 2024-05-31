@@ -4,6 +4,9 @@ import {MouseFollower} from "../Components/MouseFollower/MouseFollower.jsx";
 import {SelfWritingText} from "../Components/SelfWritingText/SelfWritingText.jsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import skillsData from "/public/Data/skills.json";
+import {Pagination} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 import {
     faAngleDown,
     faBriefcase,
@@ -12,7 +15,8 @@ import {
     faGraduationCap,
     faLanguage,
     faLaptopCode,
-    faMobileScreen
+    faMobileScreen,
+    faLink
 } from "@fortawesome/free-solid-svg-icons";
 import {BallTriangle} from 'react-loader-spinner';
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
@@ -21,6 +25,7 @@ import clickSound from "/Assets/Sounds/press.mp3";
 import {MusicButton} from "../Components/MusicButton/MusicButton.jsx";
 import LanguageSelection from "../Components/LanguageSelection/LanguageSelection.jsx";
 import {useTranslation} from "react-i18next";
+import {Swiper, SwiperSlide} from 'swiper/react';
 
 const audio = new Audio(clickSound);
 
@@ -115,6 +120,80 @@ export const Home = () => {
                     </div>
                 </div>
                 <div className={styles.title}>
+                    Portfolio
+                    <FontAwesomeIcon icon={faBriefcase}/>
+                </div>
+                <div className={styles.portfolioContainer}>
+                    <Swiper
+                        slidesPerView={3}
+                        spaceBetween={15}
+                        freeMode={true}
+                        loop={true}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        modules={[Pagination]}
+                        breakpoints={{
+                            1440: {
+                                slidesPerView: 3,
+                            },
+                            1000: {
+                                slidesPerView: 2,
+                            },
+                            0: {
+                                slidesPerView: 1
+                            }
+                        }}
+                        style={{
+                            "--swiper-pagination-color": "#C5012E",
+                            "--swiper-pagination-bullet-inactive-color": "black",
+                            "--swiper-pagination-bullet-inactive-opacity": "0.5",
+                            "--swiper-pagination-bullet-size": "22px",
+                            "--swiper-pagination-bullet-horizontal-gap": "5px",
+                        }}
+                    >
+                        <SwiperSlide>
+                            <div className={styles.projectCard}>
+                                <div className={styles.portfolioImage}>
+                                    <img src="/Assets/Images/portfolioFirst.png" alt="Portfolio"/>
+                                </div>
+                                <div className={styles.portfolioTitle}>
+                                    <p>Project: <span>EasyEat E-Commerce</span></p>
+                                    <p><h2>
+                                        E-Commerce website related to food delivery,
+                                        with filtering,sorting,shopping cart, wish list, admin panel, and etc.
+                                    </h2></p>
+                                    <p>
+                                        <a href="https://easy-east.netlify.app/" target="_blank"> <FontAwesomeIcon icon={faLink} /> Visit website</a>
+                                    </p>
+                                    <p>
+                                        <a href="https://github.com/Simon-Celestial/easy-eat-ecommerce" target="_blank">
+                                            <FontAwesomeIcon icon={faGithub} /> Source Code
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={`${styles.projectCard} ${styles.notAvailable}`}>
+                                <p>Under Development</p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={`${styles.projectCard} ${styles.notAvailable}`}>
+                                <p>Under Development</p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={`${styles.projectCard} ${styles.notAvailable}`}>
+                                <p>Under Development</p>
+                            </div>
+                        </SwiperSlide>
+
+                    </Swiper>
+
+                </div>
+                <div className={styles.title}>
                     {t('translations.work')}
                     <FontAwesomeIcon icon={faBriefcase}/>
                 </div>
@@ -122,14 +201,14 @@ export const Home = () => {
                     <a href="https://www.upwork.com/" target="_blank">
                         <img src="/Assets/Images/upWork.png" alt="Logo"/>
                         Up work</a>
-                    <h2> {t('translations.profile')} ( Freelance )</h2>
+                    <h2> {t('translations.profile')} ( {t('translations.freelance')} )</h2>
                     <h3>2024.05 - {t('translations.now')}</h3>
                 </div>
                 <div className={`${styles.educationContainer} ${styles.workContainer} ${styles.last}`}>
                     <a href="https://www.instagram.com/garageacademy.az/" target="_blank">
                         <img src="/Assets/Images/garage.png" alt="Logo"/>
                         Garage Academy</a>
-                    <h2> {t('translations.profile')} {t('translations.mentor')}</h2>
+                    <h2> {t('translations.profile')} ( {t('translations.mentor')} )</h2>
                     <h3>2024.01 - 2024.05</h3>
                 </div>
                 <div className={styles.title}>
