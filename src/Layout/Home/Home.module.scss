@@ -185,13 +185,11 @@
         }
         .portfolioImage {
           width: 100%;
-          height: 170px;
 
 
           img {
             width: 100%;
-            height: 100%;
-            object-position: left;
+            object-position: center;
             object-fit: cover;
           }
         }
@@ -567,6 +565,14 @@
           height: 300px;
         }
       }
+      .portfolioContainer {
+        .projectCard {
+          &.notAvailable {
+            max-height: 417px;
+
+          }
+        }
+      }
     }
   }
 }
@@ -595,6 +601,14 @@
         .imageBox {
           max-width: 350px;
           height: 350px;
+        }
+      }
+      .portfolioContainer {
+        .projectCard {
+          &.notAvailable {
+            max-height: 369px;
+
+          }
         }
       }
 
@@ -626,7 +640,7 @@
       .portfolioContainer {
         .projectCard {
           &.notAvailable {
-            max-height: 357px;
+            max-height: 450px;
 
           }
         }
@@ -704,7 +718,7 @@
       .portfolioContainer {
         .projectCard {
           &.notAvailable {
-            max-height: 377px;
+            max-height: 435px;
           }
         }
       }
