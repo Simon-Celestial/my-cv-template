@@ -152,7 +152,7 @@ export const Home = () => {
                 </div>
                 <div className={`${styles.educationContainer} ${styles.last}`}>
                     <a href="https://chdtu.edu.ua/" target="_blank">
-                        <img src="/public/Assets/Images/uniLogo.png" alt="Logo"/>
+                        <img src="/Assets/Images/uniLogo.png" alt="Logo"/>
                         {t('translations.university')}</a>
                     <h2>{t('translations.bachelor')}</h2>
                     <h3>2013 - 2018</h3>
