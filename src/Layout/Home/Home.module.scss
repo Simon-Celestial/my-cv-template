@@ -868,14 +868,18 @@
       .portfolioContainer {
         .projectCard {
           &.notAvailable {
-            max-height: 374px;
+            max-height: 489px;
           }
           .portfolioImage {
             height: 130px;
           }
           .portfolioTitle {
+
             p {
               font-size: 15px;
+              h2 {
+                min-height: 215px;
+              }
               span {
                 font-size: 13px;
               }
