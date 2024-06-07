@@ -58,19 +58,19 @@ export const Home = () => {
 
     }, []);
 
-    const {t,i18n} = useTranslation();
+    const {t, i18n} = useTranslation();
 
     const translatedData = useMemo(() => {
-        if(i18n.language === "en") {
+        if (i18n.language === "en") {
             return portfolioData.en;
         } else if (i18n.language === "ru") {
             return portfolioData.ru;
-            } else if (i18n.language === "tr") {
-                return portfolioData.tr;
-            } else if (i18n.language === "az") {
-                return portfolioData.az;
+        } else if (i18n.language === "tr") {
+            return portfolioData.tr;
+        } else if (i18n.language === "az") {
+            return portfolioData.az;
         }
-    },[portfolioData,i18n.language])
+    }, [portfolioData, i18n.language])
 
 
     return (
