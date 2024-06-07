@@ -1,4 +1,4 @@
-import React, {useCallback, useState, useEffect} from 'react'
+import React, {useCallback, useState, useEffect, useMemo} from 'react'
 import styles from "./Home.module.scss";
 import {MouseFollower} from "../Components/MouseFollower/MouseFollower.jsx";
 import {SelfWritingText} from "../Components/SelfWritingText/SelfWritingText.jsx";
@@ -25,6 +25,7 @@ import {MusicButton} from "../Components/MusicButton/MusicButton.jsx";
 import LanguageSelection from "../Components/LanguageSelection/LanguageSelection.jsx";
 import {useTranslation} from "react-i18next";
 import {Swiper, SwiperSlide} from 'swiper/react';
+import portfolioData from "/public/Data/PortfolioData/portfolioData.json"
 
 const audio = new Audio(clickSound);
 
@@ -57,7 +58,19 @@ export const Home = () => {
 
     }, []);
 
-    const {t} = useTranslation();
+    const {t,i18n} = useTranslation();
+
+    const translatedData = useMemo(() => {
+        if(i18n.language === "en") {
+            return portfolioData.en;
+        } else if (i18n.language === "ru") {
+            return portfolioData.ru;
+            } else if (i18n.language === "tr") {
+                return portfolioData.tr;
+            } else if (i18n.language === "az") {
+                return portfolioData.az;
+        }
+    },[portfolioData,i18n.language])
 
 
     return (
@@ -119,7 +132,7 @@ export const Home = () => {
                     </div>
                 </div>
                 <div className={styles.title}>
-                    Portfolio
+                    {t("translations.portfolio")}
                     <FontAwesomeIcon icon={faBriefcase}/>
                 </div>
                 <div className={styles.portfolioContainer}>
@@ -151,62 +164,42 @@ export const Home = () => {
                             "--swiper-pagination-bullet-horizontal-gap": "5px",
                         }}
                     >
+                        {translatedData?.map((data) => {
+                            return (
+                                <SwiperSlide key={data?.id}>
+                                    <div className={styles.projectCard}>
+                                        <div className={styles.portfolioImage}>
+                                            <img src={data.image} alt="Portfolio"/>
+                                        </div>
+                                        <div className={styles.portfolioTitle}>
+                                            <p>{t("translations.project")} : <span>{data?.projectName}</span></p>
+                                            <p><h2>
+                                                {data?.projectDescription}
+                                            </h2></p>
+                                            <p>
+                                                <a href={data?.projectLink} target="_blank"> <FontAwesomeIcon
+                                                    icon={faLink}/> {t("translations.visitWebsite")}</a>
+                                            </p>
+                                            <p>
+                                                <a href={data?.githubLink} target="_blank">
+                                                    <FontAwesomeIcon icon={faGithub}/> {t("translations.sourceCode")}
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            )
+                        })}
                         <SwiperSlide>
-                            <div className={styles.projectCard}>
-                                <div className={styles.portfolioImage}>
-                                    <img src="/Assets/Images/portfolioFirst.png" alt="Portfolio"/>
-                                </div>
-                                <div className={styles.portfolioTitle}>
-                                    <p>Project: <span>EasyEat E-Commerce</span></p>
-                                    <p><h2>
-                                        E-Commerce website related to food delivery,
-                                        with filtering,sorting,shopping cart, wish list, admin panel, and etc.
-                                    </h2></p>
-                                    <p>
-                                        <a href="https://easy-east.netlify.app/" target="_blank"> <FontAwesomeIcon icon={faLink} /> Visit website</a>
-                                    </p>
-                                    <p>
-                                        <a href="https://github.com/Simon-Celestial/easy-eat-ecommerce" target="_blank">
-                                            <FontAwesomeIcon icon={faGithub} /> Source Code
-                                        </a>
-                                    </p>
-                                </div>
+                            <div className={`${styles.projectCard} ${styles.notAvailable}`}>
+                                <p>{t("translations.underDevelopment")}</p>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className={`${styles.projectCard} ${styles.notAvailable}`}>
-                                <div className={styles.portfolioImage}>
-                                    <img src="/Assets/Images/portfolioSecond.png" alt="Portfolio"/>
-                                </div>
-                                <div className={styles.portfolioTitle}>
-                                    <p>Project: <span>Specto Cinema</span></p>
-                                    <p><h2>
-                                        Cinema website related to films,
-                                        with filtering,search,adaptive design,language change, and etc.
-                                    </h2></p>
-                                    <p>
-                                        <a href="https://specto-cinema.netlify.app/" target="_blank"> <FontAwesomeIcon
-                                            icon={faLink}/> Visit website</a>
-                                    </p>
-                                    <p>
-                                        <a href="https://github.com/Simon-Celestial/cinema-project-react" target="_blank">
-                                            <FontAwesomeIcon icon={faGithub}/> Source Code
-                                        </a>
-                                    </p>
-                                </div>
+                                <p>{t("translations.underDevelopment")}</p>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide>
-                            <div className={`${styles.projectCard} ${styles.notAvailable}`}>
-                                <p>Under Development</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className={`${styles.projectCard} ${styles.notAvailable}`}>
-                                <p>Under Development</p>
-                            </div>
-                        </SwiperSlide>
-
                     </Swiper>
 
                 </div>

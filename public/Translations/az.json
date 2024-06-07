@@ -26,6 +26,13 @@
     "azerbaijani": "Azerbaycanca",
     "profile": "Front-end Proqramlaşdırma",
     "mentor": "Mentor",
-    "now" : "bu vaxt"
+    "now" : "bu vaxt",
+    "portfolio" : "Portfel",
+    "project": "Layihə",
+    "visitWebsite": "Saytı ziyarət et",
+    "sourceCode" : "Mənbə Kodu",
+    "underDevelopment": "İşlənməkdədir"
+
+
   }
 }

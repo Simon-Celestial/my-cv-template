@@ -1,0 +1,74 @@
+{
+  "en": [
+    {
+      "id": "aBs3S",
+      "projectName": "EasyEat E-Commerce",
+      "projectLink": "https://easy-east.netlify.app",
+      "githubLink": "https://github.com/Simon-Celestial/easy-eat-ecommerce",
+      "image": "/Assets/Images/portfolioFirst.png",
+      "projectDescription": "E-Commerce website related to food delivery, with filtering, sorting, shopping cart, wishlist, admin panel, and etc."
+    },
+    {
+      "id": "a3f5C",
+      "projectName": "Specto Cinema",
+      "projectLink": "https://specto-cinema.netlify.app",
+      "githubLink": "https://github.com/Simon-Celestial/cinema-project-react",
+      "image": "/Assets/Images/portfolioSecond.png",
+      "projectDescription": "Cinema website related to films, with filtering, search, adaptive design, language change, and etc."
+    }
+  ],
+  "ru": [
+    {
+      "id": "aBs3S",
+      "projectName": "EasyEat E-Коммерция",
+      "projectLink": "https://easy-east.netlify.app",
+      "githubLink": "https://github.com/Simon-Celestial/easy-eat-ecommerce",
+      "image": "/Assets/Images/portfolioFirst.png",
+      "projectDescription": "Интернет-магазин, связанный с доставкой еды, с фильтрацией, сортировкой, корзиной покупок, списком желаемого, административной панелью и т.д."
+    },
+    {
+      "id": "a3f5C",
+      "projectName": "Specto Cinema",
+      "projectLink": "https://specto-cinema.netlify.app",
+      "githubLink": "https://github.com/Simon-Celestial/cinema-project-react",
+      "image": "/Assets/Images/portfolioSecond.png",
+      "projectDescription": "Сайт кинотеатра, связанный с фильмами, с фильтрацией, поиском, адаптивным дизайном, сменой языка и т.д."
+    }
+  ],
+  "tr": [
+    {
+      "id": "aBs3S",
+      "projectName": "EasyEat E-Ticaret",
+      "projectLink": "https://easy-east.netlify.app",
+      "githubLink": "https://github.com/Simon-Celestial/easy-eat-ecommerce",
+      "image": "/Assets/Images/portfolioFirst.png",
+      "projectDescription": "Yemek teslimatı ile ilgili e-ticaret sitesi, filtreleme, sıralama, alışveriş sepeti, istek listesi, yönetici paneli vb. özelliklere sahiptir."
+    },
+    {
+      "id": "a3f5C",
+      "projectName": "Specto Sineması",
+      "projectLink": "https://specto-cinema.netlify.app",
+      "githubLink": "https://github.com/Simon-Celestial/cinema-project-react",
+      "image": "/Assets/Images/portfolioSecond.png",
+      "projectDescription": "Filmlerle ilgili sinema sitesi, filtreleme, arama, uyumlu tasarım, dil değişikliği vb. özelliklere sahiptir."
+    }
+  ],
+  "az": [
+    {
+      "id": "aBs3S",
+      "projectName": "EasyEat E-Ticarət",
+      "projectLink": "https://easy-east.netlify.app",
+      "githubLink": "https://github.com/Simon-Celestial/easy-eat-ecommerce",
+      "image": "/Assets/Images/portfolioFirst.png",
+      "projectDescription": "Yemək çatdırılması ilə bağlı e-ticarət saytı, filtrləmə, çeşidləmə, alış-veriş səbəti, arzu siyahısı, idarəetmə paneli və s. ilə."
+    },
+    {
+      "id": "a3f5C",
+      "projectName": "Specto Kinoteatrı",
+      "projectLink": "https://specto-cinema.netlify.app",
+      "githubLink": "https://github.com/Simon-Celestial/cinema-project-react",
+      "image": "/Assets/Images/portfolioSecond.png",
+      "projectDescription": "Filmlərlə bağlı kinoteatr saytı, filtrləmə, axtarış, uyğun dizayn, dil dəyişikliyi və s. ilə."
+    }
+  ]
+}

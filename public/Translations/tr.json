@@ -26,7 +26,14 @@
     "azerbaijani": "Azərbaycanca",
     "profile": "Front-end Programlama",
     "mentor": "Öğretmen",
-    "now" : "şimdi"
+    "now" : "şimdi",
+    "portfolio" : "Portföy",
+    "project": "Proje",
+    "visitWebsite": "Web sitesini ziyaret et",
+    "sourceCode" : "Kaynak Kodu",
+    "underDevelopment": "Geliştirme Aşamasında"
+
+
 
 
   }

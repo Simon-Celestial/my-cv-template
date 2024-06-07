@@ -26,7 +26,12 @@
     "azerbaijani": "Azerbaijani",
     "profile": "Front-end development",
     "mentor": "Mentor",
-    "now" : "now"
+    "now" : "now",
+    "portfolio" : "Portfolio",
+    "project": "Project",
+    "visitWebsite": "Visit website",
+    "sourceCode" : "Source Code",
+    "underDevelopment": "Under Development"
 
 
 
