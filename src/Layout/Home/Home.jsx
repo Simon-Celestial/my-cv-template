@@ -175,7 +175,25 @@ export const Home = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className={`${styles.projectCard} ${styles.notAvailable}`}>
-                                <p>Under Development</p>
+                                <div className={styles.portfolioImage}>
+                                    <img src="/Assets/Images/portfolioSecond.png" alt="Portfolio"/>
+                                </div>
+                                <div className={styles.portfolioTitle}>
+                                    <p>Project: <span>Specto Cinema</span></p>
+                                    <p><h2>
+                                        Cinema website related to films,
+                                        with filtering,search,adaptive design,language change, and etc.
+                                    </h2></p>
+                                    <p>
+                                        <a href="https://specto-cinema.netlify.app/" target="_blank"> <FontAwesomeIcon
+                                            icon={faLink}/> Visit website</a>
+                                    </p>
+                                    <p>
+                                        <a href="https://github.com/Simon-Celestial/cinema-project-react" target="_blank">
+                                            <FontAwesomeIcon icon={faGithub}/> Source Code
+                                        </a>
+                                    </p>
+                                </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
