@@ -1,7 +1,7 @@
 import React, {useEffect, useState, useMemo} from 'react'
 import styles from "./SelfWritingText.module.scss";
 
-const words = 'Junior Front End Developer '.split(' ');
+const words = 'Front End Developer '.split(' ');
 
 const timelinePositions = words.map(it => it.length * 2);
 const framesPerCycle = timelinePositions.reduce((a,b) => a + b, 0);

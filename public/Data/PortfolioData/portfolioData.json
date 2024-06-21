@@ -15,7 +15,16 @@
       "githubLink": "https://github.com/Simon-Celestial/cinema-project-react",
       "image": "/Assets/Images/portfolioSecond.png",
       "projectDescription": "Cinema website related to films, with filtering, search, adaptive design, language change, and etc."
+    },
+    {
+      "id": "s4e3a",
+      "projectName": "Gourmet Food",
+      "projectLink": "https://gourmet-food.vercel.app/",
+      "githubLink": "https://github.com/Simon-Celestial/restaurant_project",
+      "image": "/Assets/Images/portfolioThird.png",
+      "projectDescription": "Restaurant website related to food delivery, with filtering, search, shopping cart, wishlist, adaptive design and etc."
     }
+
   ],
   "ru": [
     {
@@ -33,7 +42,21 @@
       "githubLink": "https://github.com/Simon-Celestial/cinema-project-react",
       "image": "/Assets/Images/portfolioSecond.png",
       "projectDescription": "Сайт кинотеатра, связанный с фильмами, с фильтрацией, поиском, адаптивным дизайном, сменой языка и т.д."
+    },
+    {
+      "id": "s4e3a",
+      "projectName": "Гурмания Еда",
+      "projectLink": "https://gourmet-food.vercel.app/",
+      "githubLink": "https://github.com/Simon-Celestial/restaurant_project",
+      "image": "/Assets/Images/portfolioThird.png",
+      "projectDescription": "Сайт ресторана, связанный с доставкой еды, с функциями фильтрации, поиска, корзины покупок, списка желаемого, адаптивного дизайна и т.д."
     }
+
+
+
+
+
+
   ],
   "tr": [
     {
@@ -51,7 +74,16 @@
       "githubLink": "https://github.com/Simon-Celestial/cinema-project-react",
       "image": "/Assets/Images/portfolioSecond.png",
       "projectDescription": "Filmlerle ilgili sinema sitesi, filtreleme, arama, uyumlu tasarım, dil değişikliği vb. özelliklere sahiptir."
+    },
+    {
+      "id": "s4e3a",
+      "projectName": "Gurme Yemek",
+      "projectLink": "https://gourmet-food.vercel.app/",
+      "githubLink": "https://github.com/Simon-Celestial/restaurant_project",
+      "image": "/Assets/Images/portfolioThird.png",
+      "projectDescription": "Yemek teslimatıyla ilgili restoran web sitesi, filtreleme, arama, alışveriş sepeti, istek listesi, uyarlanabilir tasarım vb. özelliklerle."
     }
+
   ],
   "az": [
     {
@@ -69,6 +101,15 @@
       "githubLink": "https://github.com/Simon-Celestial/cinema-project-react",
       "image": "/Assets/Images/portfolioSecond.png",
       "projectDescription": "Filmlərlə bağlı kinoteatr saytı, filtrləmə, axtarış, uyğun dizayn, dil dəyişikliyi və s. ilə."
+    },
+    {
+      "id": "s4e3a",
+      "projectName": "Qurman Yeməyi",
+      "projectLink": "https://gourmet-food.vercel.app/",
+      "githubLink": "https://github.com/Simon-Celestial/restaurant_project",
+      "image": "/Assets/Images/portfolioThird.png",
+      "projectDescription": "Yemək çatdırılması ilə bağlı restoran veb saytı, filtrləmə, axtarış, alış-veriş səbəti, arzulananlar siyahısı, adaptiv dizayn və s. ilə."
     }
+
   ]
 }

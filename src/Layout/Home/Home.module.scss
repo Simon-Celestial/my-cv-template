@@ -177,6 +177,7 @@
          border: 2px dashed $main-color;
         border-radius: 5px;
         overflow: hidden;
+        max-height: 420px;
         &.notAvailable {
           justify-content: center;
           align-items: center;
@@ -185,7 +186,7 @@
         }
         .portfolioImage {
           width: 100%;
-          max-height: 345px;
+          max-height: 205px;
 
 
           img {
@@ -571,9 +572,9 @@
       }
       .portfolioContainer {
         .projectCard {
+          max-height: 455px;
           &.notAvailable {
-            max-height: 458px;
-
+            max-height: 455px;
           }
         }
       }
@@ -588,6 +589,7 @@
     }
   }
 }
+
 
 @media screen and (max-width: 1200px) {
   .pageWrapper {
@@ -609,6 +611,7 @@
       }
       .portfolioContainer {
         .projectCard {
+          max-height: 410px;
           &.notAvailable {
             max-height: 410px;
 
@@ -643,9 +646,20 @@
       }
       .portfolioContainer {
         .projectCard {
+          max-height: unset;
           &.notAvailable {
-            max-height: 510px;
-
+            max-height: 539px;
+          }
+          .portfolioImage {
+            max-height: 256px;
+            height: 100%;
+          }
+          .portfolioTitle {
+            p {
+              h2 {
+                min-height: 133px;
+              }
+            }
           }
         }
       }
@@ -722,7 +736,7 @@
       .portfolioContainer {
         .projectCard {
           &.notAvailable {
-            max-height: 476px;
+            max-height: 511px;
           }
         }
       }
@@ -753,7 +767,7 @@
       .portfolioContainer {
         .projectCard {
           &.notAvailable {
-            max-height: 449px;
+            max-height: 483px;
           }
           .portfolioImage {
             height: 200px;
@@ -804,7 +818,7 @@
       .portfolioContainer {
         .projectCard {
           &.notAvailable {
-            max-height: 395px;
+            max-height: 429px;
 
           }
           .portfolioTitle {
@@ -830,7 +844,7 @@
         }
 
         h2 {
-          font-size: 14px;
+          font-size: 13.5px;
         }
 
         h3 {
@@ -867,8 +881,9 @@
       }
       .portfolioContainer {
         .projectCard {
+          max-height: 425px;
           &.notAvailable {
-            max-height: 489px;
+            max-height: 425px;
           }
           .portfolioImage {
             height: 130px;
@@ -878,7 +893,7 @@
             p {
               font-size: 15px;
               h2 {
-                min-height: 215px;
+                min-height: 150px;
               }
               span {
                 font-size: 13px;

@@ -195,11 +195,6 @@ export const Home = () => {
                                 <p>{t("translations.underDevelopment")}</p>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide>
-                            <div className={`${styles.projectCard} ${styles.notAvailable}`}>
-                                <p>{t("translations.underDevelopment")}</p>
-                            </div>
-                        </SwiperSlide>
                     </Swiper>
 
                 </div>
