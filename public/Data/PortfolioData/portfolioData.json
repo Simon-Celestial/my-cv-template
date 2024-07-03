@@ -23,7 +23,16 @@
       "githubLink": "https://github.com/Simon-Celestial/restaurant_project",
       "image": "/Assets/Images/portfolioThird.png",
       "projectDescription": "Restaurant website related to food delivery, with filtering, search, shopping cart, wishlist, adaptive design and etc."
+    },
+    {
+      "id": "d32u7",
+      "projectName": "Boutique Shop",
+      "projectLink": "https://fashion-e-commerce-shop.vercel.app/",
+      "githubLink": "https://github.com/Simon-Celestial/e-commerce-project",
+      "image": "/Assets/Images/portfolioFourth.png",
+      "projectDescription": "Shop website related to fashionable clothes, with filtering, search, shopping cart, wishlist, adaptive design, admin panel and etc."
     }
+
 
   ],
   "ru": [
@@ -50,13 +59,15 @@
       "githubLink": "https://github.com/Simon-Celestial/restaurant_project",
       "image": "/Assets/Images/portfolioThird.png",
       "projectDescription": "Сайт ресторана, связанный с доставкой еды, с функциями фильтрации, поиска, корзины покупок, списка желаемого, адаптивного дизайна и т.д."
+    },
+    {
+      "id": "d32u7",
+      "projectName": "Модный магазин",
+      "projectLink": "https://fashion-e-commerce-shop.vercel.app/",
+      "githubLink": "https://github.com/Simon-Celestial/e-commerce-project",
+      "image": "/Assets/Images/portfolioFourth.png",
+      "projectDescription": "Интернет-магазин модной одежды с возможностью фильтрации, поиска, корзины покупок, списков желаний, адаптивным дизайном, панелью администратора и т. д."
     }
-
-
-
-
-
-
   ],
   "tr": [
     {
@@ -82,8 +93,15 @@
       "githubLink": "https://github.com/Simon-Celestial/restaurant_project",
       "image": "/Assets/Images/portfolioThird.png",
       "projectDescription": "Yemek teslimatıyla ilgili restoran web sitesi, filtreleme, arama, alışveriş sepeti, istek listesi, uyarlanabilir tasarım vb. özelliklerle."
+    },
+    {
+      "id": "d32u7",
+      "projectName": "Butik Mağaza",
+      "projectLink": "https://fashion-e-commerce-shop.vercel.app/",
+      "githubLink": "https://github.com/Simon-Celestial/e-commerce-project",
+      "image": "/Assets/Images/portfolioFourth.png",
+      "projectDescription": "Moda kıyafetlerle ilgili alışveriş web sitesi, filtreleme, arama, alışveriş sepeti, dilek listesi, adaptif tasarım, yönetici paneli vb. özellikler sunar."
     }
-
   ],
   "az": [
     {
@@ -109,7 +127,14 @@
       "githubLink": "https://github.com/Simon-Celestial/restaurant_project",
       "image": "/Assets/Images/portfolioThird.png",
       "projectDescription": "Yemək çatdırılması ilə bağlı restoran veb saytı, filtrləmə, axtarış, alış-veriş səbəti, arzulananlar siyahısı, adaptiv dizayn və s. ilə."
+    },
+    {
+      "id": "d32u7",
+      "projectName": "Boutique Mağaza",
+      "projectLink": "https://fashion-e-commerce-shop.vercel.app/",
+      "githubLink": "https://github.com/Simon-Celestial/e-commerce-project",
+      "image": "/Assets/Images/portfolioFourth.png",
+      "projectDescription": "Moda geyimlə bağlı alış-veriş veb-saytı, filtrasiya, axtarış, alış-veriş sepeti, istək siyahısı, adaptiv dizayn, idarə paneli və s."
     }
-
   ]
 }
