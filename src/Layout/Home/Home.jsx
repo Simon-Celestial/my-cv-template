@@ -228,9 +228,9 @@ export const Home = () => {
                     <h3>2023.08 - 2024.01</h3>
                 </div>
                 <div className={styles.educationContainer}>
-                    <a href="https://www.instagram.com/evocoding.az/" target="_blank">
-                        <img src="/Assets/Images/evo.png" alt="Logo"/>
-                        Evo Coding Center</a>
+                    <a href="https://www.instagram.com/evoacademy.az/" target="_blank">
+                        <img src="/Assets/Images/evo.jpg" alt="Logo"/>
+                        Evo Academy</a>
                     <h2>{t('translations.profile')}</h2>
                     <h3>2023.02 - 2023.07</h3>
                 </div>
