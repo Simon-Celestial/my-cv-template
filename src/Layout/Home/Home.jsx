@@ -224,7 +224,7 @@ export const Home = () => {
                     <a href="https://www.instagram.com/garageacademy.az/" target="_blank">
                         <img src="/Assets/Images/garage.png" alt="Logo"/>
                         Garage Academy</a>
-                    <h2>{t('translations.profile')}</h2>
+                    <h2>{t('translations.profile')} ( {t('translations.advanced')} )</h2>
                     <h3>2023.08 - 2024.01</h3>
                 </div>
                 <div className={styles.educationContainer}>

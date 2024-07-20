@@ -31,12 +31,7 @@
     "project": "Проект",
     "visitWebsite": "Посетить сайт",
     "sourceCode" : "Исходный код",
-    "underDevelopment": "В разработке"
-
-
-
-
-
-
+    "underDevelopment": "В разработке",
+    "advanced": "Продвинутый"
   }
 }

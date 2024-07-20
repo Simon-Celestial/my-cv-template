@@ -31,11 +31,7 @@
     "project": "Project",
     "visitWebsite": "Visit website",
     "sourceCode" : "Source Code",
-    "underDevelopment": "Under Development"
-
-
-
-
-
+    "underDevelopment": "Under Development",
+    "advanced": "Advanced"
   }
 }
