@@ -870,7 +870,6 @@
   .pageWrapper {
     .pageContent {
       max-width: 280px;
-
       .skillsContainer {
         flex-wrap: unset;
         flex-direction: column;
@@ -902,8 +901,6 @@
           }
         }
       }
-
-
       .contactMe {
         .contactColumn {
           .contactRow {
@@ -913,12 +910,16 @@
           }
         }
       }
-
       .infoContainer {
         .infoContent {
           h3 {
             text-align: center;
           }
+        }
+      }
+      .educationContainer {
+        h2 {
+          text-align: center;
         }
       }
     }
