@@ -209,6 +209,14 @@ export const Home = () => {
                     <h2> {t('translations.profile')} ( {t('translations.freelance')} )</h2>
                     <h3>2024.05 - {t('translations.now')}</h3>
                 </div>
+                <div className={`${styles.educationContainer} ${styles.workContainer}`}>
+                    <a href="https://wp.cheweek.com/" target="_blank">
+                        <img src="/Assets/Images/logo.webp" alt="Logo"/>
+                        Cheweek LLC</a>
+                    <h2> {t('translations.profile')} ( ERP )</h2>
+                    <h3>2024.06 - 2024.08</h3>
+                </div>
+
                 <div className={`${styles.educationContainer} ${styles.workContainer} ${styles.last}`}>
                     <a href="https://www.instagram.com/garageacademy.az/" target="_blank">
                         <img src="/Assets/Images/garage.png" alt="Logo"/>

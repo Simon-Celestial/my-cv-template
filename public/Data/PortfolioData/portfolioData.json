@@ -1,6 +1,14 @@
 {
   "en": [
     {
+      "id": "dwq13",
+      "projectName": "Gamestorm studio",
+      "projectLink": "https://gaming-shop-project.vercel.app/",
+      "githubLink": "https://github.com/Simon-Celestial/gaming_shop_project",
+      "image": "/Assets/Images/portfolioFifth.png",
+      "projectDescription": "A website for gamers, focused on game development and device sales. Website is featuring sorting, a shopping cart, a wishlist, animations, and more."
+    },
+    {
       "id": "aBs3S",
       "projectName": "EasyEat E-Commerce",
       "projectLink": "https://easy-east.netlify.app",
@@ -32,10 +40,16 @@
       "image": "/Assets/Images/portfolioFourth.png",
       "projectDescription": "Shop website related to fashionable clothes, with filtering, search, shopping cart, wishlist, adaptive design, admin panel and etc."
     }
-
-
   ],
   "ru": [
+    {
+      "id": "dwq13",
+      "projectName": "Gamestorm студия",
+      "projectLink": "https://gaming-shop-project.vercel.app/",
+      "githubLink": "https://github.com/Simon-Celestial/gaming_shop_project",
+      "image": "/Assets/Images/portfolioFifth.png",
+      "projectDescription": "Веб-сайт для геймеров, ориентированный на разработку игр и продажу устройств. Сайт с функциями сортировки, корзины покупок, списка желаемого, анимации и многим другим."
+    },
     {
       "id": "aBs3S",
       "projectName": "EasyEat E-Коммерция",
@@ -71,6 +85,14 @@
   ],
   "tr": [
     {
+      "id": "dwq13",
+      "projectName": "Gamestorm Stüdyo",
+      "projectLink": "https://gaming-shop-project.vercel.app/",
+      "githubLink": "https://github.com/Simon-Celestial/gaming_shop_project",
+      "image": "/Assets/Images/portfolioFifth.png",
+      "projectDescription": "Oyun geliştirmeye ve cihaz satışına odaklanan. Sıralama, alışveriş sepeti, istek listesi, animasyonlar ve daha birçok özelliğe sahip bir web sitesi."
+    },
+    {
       "id": "aBs3S",
       "projectName": "EasyEat E-Ticaret",
       "projectLink": "https://easy-east.netlify.app",
@@ -104,6 +126,14 @@
     }
   ],
   "az": [
+    {
+      "id": "dwq13",
+      "projectName": "Gamestorm studiyası",
+      "projectLink": "https://gaming-shop-project.vercel.app/",
+      "githubLink": "https://github.com/Simon-Celestial/gaming_shop_project",
+      "image": "/Assets/Images/portfolioFifth.png",
+      "projectDescription": "Oyunların hazırlanması və cihazların satışı üçün nəzərdə tutulmuş. Çeşidləmə, alış-veriş səbəti, istəklər siyahısı, animasiyalar və daha çox funksiyalara malik bir veb-sayt."
+    },
     {
       "id": "aBs3S",
       "projectName": "EasyEat E-Ticarət",
