@@ -82,5 +82,10 @@
   {
     "id": 21,
     "name": "Admin Dashboard"
+  },
+  {
+    "id": 22,
+    "name": "CMS"
   }
+
 ]

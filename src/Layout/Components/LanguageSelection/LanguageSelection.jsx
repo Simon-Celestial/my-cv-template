@@ -11,10 +11,17 @@ const LanguageSelection = () => {
 
     const {i18n} = useTranslation();
 
-    const changeLanguageHandler = (language) => {
+    const changeLanguageHandler = useCallback((language) => {
         i18n.changeLanguage(language);
-    }
+        localStorage.setItem('language', language);
+    }, [i18n]);
 
+    useEffect(() => {
+        const savedLanguage = localStorage.getItem('language');
+        if (savedLanguage) {
+            i18n.changeLanguage(savedLanguage);
+        }
+    }, [i18n]);
 
     const languageOpenHandler = useCallback((event) => {
         event.stopPropagation();

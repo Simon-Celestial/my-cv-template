@@ -54,23 +54,26 @@ export const Home = () => {
     useEffect(() => {
         setTimeout(() => {
             setLoaderActive(false);
-        }, 3000);
+        }, 1500);
 
     }, []);
 
     const {t, i18n} = useTranslation();
 
     const translatedData = useMemo(() => {
-        if (i18n.language === "en") {
-            return portfolioData.en;
-        } else if (i18n.language === "ru") {
-            return portfolioData.ru;
-        } else if (i18n.language === "tr") {
-            return portfolioData.tr;
-        } else if (i18n.language === "az") {
-            return portfolioData.az;
+        switch (i18n.language) {
+            case "en":
+                return portfolioData.en;
+            case "ru":
+                return portfolioData.ru;
+            case "tr":
+                return portfolioData.tr;
+            case "az":
+                return portfolioData.az;
+            default:
+                return portfolioData.en;
         }
-    }, [portfolioData, i18n.language])
+    }, [portfolioData, i18n.language]);
 
 
     return (
@@ -173,9 +176,9 @@ export const Home = () => {
                                         </div>
                                         <div className={styles.portfolioTitle}>
                                             <p>{t("translations.project")} : <span>{data?.projectName}</span></p>
-                                            <p><h2>
+                                            <p className={styles.description}>
                                                 {data?.projectDescription}
-                                            </h2></p>
+                                            </p>
                                             <p>
                                                 <a href={data?.projectLink} target="_blank"> <FontAwesomeIcon
                                                     icon={faLink}/> {t("translations.visitWebsite")}</a>
@@ -203,6 +206,13 @@ export const Home = () => {
                     <FontAwesomeIcon icon={faBriefcase}/>
                 </div>
                 <div className={`${styles.educationContainer} ${styles.workContainer}`}>
+                    <a href="https://bestsolutions.az/" target="_blank">
+                        <img src="/Assets/Images/logo_best.png" alt="Logo"/>
+                        B.EST Solutions</a>
+                    <h2> {t('translations.profile')}</h2>
+                    <h3>2024.08 - {t('translations.now')}</h3>
+                </div>
+                <div className={`${styles.educationContainer} ${styles.workContainer}`}>
                     <a href="https://www.upwork.com/" target="_blank">
                         <img src="/Assets/Images/upWork.png" alt="Logo"/>
                         Up work</a>
@@ -216,7 +226,6 @@ export const Home = () => {
                     <h2> {t('translations.profile')} ( ERP )</h2>
                     <h3>2024.06 - 2024.08</h3>
                 </div>
-
                 <div className={`${styles.educationContainer} ${styles.workContainer} ${styles.last}`}>
                     <a href="https://www.instagram.com/garageacademy.az/" target="_blank">
                         <img src="/Assets/Images/garage.png" alt="Logo"/>
